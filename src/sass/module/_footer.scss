@@ -1,0 +1,83 @@
+@use "./module/variable"as var;
+.notice{
+    color: var.$white;
+    @include var.fz(14);
+    line-height: 1.5;
+    @media screen and (max-width: var.$spbp) {
+        @include var.fz(12);
+
+    }
+}
+
+.footer{
+    background: url('../img/bg_wood01b.jpg') no-repeat;
+    width: 100%;
+    padding: 108px 0;
+    &__inner{
+        margin: 0 auto;
+    }
+    &__sns{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 32px;
+        li{
+            margin: 0 7px;
+        }
+        &--x{
+            @include var.bg();
+            background: url('../img/x.svg') no-repeat;
+            width: 40px;
+            height: 40px;
+        }
+        &--insta{
+            @include var.bg();
+            background: url('../img/insta.svg') no-repeat;
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+    &__notice{
+        @extend .notice;
+        text-align: center;
+    }
+    &__btmnotice{
+        @extend .notice;
+        text-align: center;
+    }
+    &__ginbis{
+        @include var.bg();
+        background-image: url('../img/bnr_ginbis.png');
+        width: 300px;
+        height: 60px;
+        margin: 20px auto;
+    }
+    &__links{
+        @extend .footer__sns;
+        margin-top: 40px;
+        li{
+            margin: 0 5px;
+            a{
+                @extend .notice;
+                text-decoration: underline;
+            }
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 15bvw 0;
+        &__inner{
+            padding: 0 5vw;
+        }
+        &__ginbis{
+            width: 260px;
+            height: 52px;
+            margin: 20px auto;
+        }
+        &__btmnotice{
+            text-align-last: left;
+            padding-left: 1em;
+            text-indent: -1em;
+            margin-bottom: 5px;
+        }
+    }
+}

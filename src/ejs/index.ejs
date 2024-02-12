@@ -1,0 +1,93 @@
+ <%
+// 以下の設定値を記入のこと
+var pageinit = {
+ttl : 'たべっ子どうぶつTime' ,
+keywords : '' ,
+description : '「たべっ子どうぶつ」初のアプリゲーム が登場' ,
+ogurl : 'https://tabekkotime.jp/' ,
+path: '',
+ogimage : '' ,
+path : '' ,
+category : ['top'] ,
+pagename : '',
+css: [],
+js:[]
+};
+%> 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="<%= pageinit.ogurl %>">
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+
+<meta name="description" content="<%= pageinit.description %>"/>
+<meta property="og:url" content="<%= pageinit.ogurl %>"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="<%= pageinit.ttl %>"/>
+<meta property="og:description" content="<%= pageinit.description %>"/>
+<meta property="og:site_name" content="<%= pageinit.ttl %>"/>
+<meta property="og:image" content="./assets/img/ogp.png"/>
+
+<!-- favicon -->
+<link rel="icon" href="./assets/img/favicon.ico" sizes="any">
+
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><!-- Google Font -->
+
+<!-- swiper -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+<!-- swiper -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script> -->
+
+<script src="https://polyfill.io/v3/polyfill.min.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<title><%= pageinit.ttl %></title>
+
+</head>
+
+
+<body>
+
+<header class="header">
+  <h1 class="header__fv">「たべっ子どうぶつ」初のアプリゲーム たべっ子どうぶつTime 2024.3 Coming Soon
+    <!-- <p class="header__comsoon">COMING SOON</p> -->
+
+  </h1>
+</header>
+
+  <%- include('main'); -%>
+  <%- include('footer'); -%>
+
+
+  <div class="fixedbnr">
+    <div class="fixedbnr__flx">
+      <a href="https://twitter.com/tabekko_time/" target="_blank" rel="noopener noreferrer" class="fixedbnr__flx--x">たべっ子どうぶつTime X</a>
+      <a href="https://www.instagram.com/tabekko_time/" target="_blank" rel="noopener noreferrer" class="fixedbnr__flx--insta">たべっ子どうぶつTime Instagra</a>
+    </div>
+  </div>
+
+  <script src="./assets/js/modernizr-custom.js"></script>
+  <script src="./assets/js/common.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+    
+
+  

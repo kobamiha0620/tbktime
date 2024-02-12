@@ -1,0 +1,133 @@
+@use "./reset";
+@use "./module/variable"as var;
+@use "./module/*";
+
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    @media screen and (max-width: var.$spbp) {
+
+    }
+}
+
+.footer{
+
+    @media screen and (max-width: var.$spbp) {
+
+    }
+    
+}
+
+
+
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.8s, transform 1.2s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
+
+a{
+    &:hover{
+        opacity: 0.7;
+    }
+    @media screen and (max-width: var.$spbp) {
+        &:hover{
+            opacity: 1;
+        }
+    }
+    
+}
+
+
+.fixedbnr{
+    position: fixed;
+    right: 0;
+    bottom: 5vw;
+    background-image: url('../img/fixedbnr.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 320px;
+    height: 147px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
+    transition: .3s;
+
+    &__flx{
+        display: flex;
+        justify-content: space-between;
+        width: 265px;
+        margin:  0 auto;
+        padding: 74px 0 0;
+        &--x{
+            @include var.bg();
+            background-image: url('../img/btn_x-fix.png');
+            width: 116px;
+            height: 45px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        &--insta{
+            @include var.bg();
+            background-image: url('../img/btn_insta-fix.png');
+            width: 144px;
+            height: 45px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 320px;
+        height: 147px;
+        box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
+        &__flx{
+            display: flex;
+            justify-content: space-between;
+            width: 265px;
+            margin:  0 auto;
+            padding: 74px 0 0;
+            &--x{
+                @include var.bg();
+                background-image: url('../img/btn_x-fix.png');
+                width: 116px;
+                height: 45px;
+                background-size: cover;
+                background-repeat: no-repeat;
+    
+            }
+            &--insta{
+                @include var.bg();
+                background-image: url('../img/btn_insta-fix.png');
+                width: 144px;
+                height: 45px;
+                background-size: cover;
+                background-repeat: no-repeat;
+    
+            }
+        }
+    }
+}
+
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.5s, transform 1s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}

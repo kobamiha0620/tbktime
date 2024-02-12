@@ -1,0 +1,273 @@
+@use "./module/variable"as var;
+
+.policy{
+    &__txt{
+        @include var.fz(15);
+        line-height: 1.8;
+        color: #444;
+        margin: 0 0 1.8em;
+        &-b{
+            @include var.fz(15);
+            line-height: 1.8;
+            color: #444;
+            margin: 2em 0 0;
+            text-indent: -1em;
+            padding-left: 1em;
+        }
+    }
+    &__box{
+        counter-reset: item;
+        padding-left: 1em;
+        margin-left: 1em;
+        margin-top: 1em;
+
+        li{
+            position: relative;
+            line-height: 1.8;
+            @include var.fz(15);
+            color: #444;
+            margin-bottom: 2em;
+            a{
+                font-size: 0.8em;
+                word-break: break-all;
+            }
+            &::before{
+                counter-increment: item;
+                content: counter(item) ".";
+                line-height: 1.8;
+                @include var.fz(15);
+                color: #444;
+
+                position: absolute;
+                left: -1.6em;
+            }
+        }
+    }
+    &__alp{
+        counter-reset: num;
+        padding-left: 1em;
+        margin-left: 0.6em;
+        margin-top: 1em;
+
+        li{
+            @include var.fz(15);
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1em;
+            &::before{
+                counter-increment: num;
+                content: "(" counter(num, lower-alpha) ")";
+                @include var.fz(15);
+                line-height: 1.8;
+                color: #444;
+                position: absolute;
+                left: -1.6em;
+            }
+        }
+    }
+    &__greek{
+        counter-reset: greek;
+        padding-left: 1em;
+        margin-left: 0.6em;
+        margin-top: 1em;
+
+        li{
+            @include var.fz(15);
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1em;
+            &::before{
+                counter-increment: greek;
+                content: "(" counter(greek, lower-roman) ")";
+                @include var.fz(15);
+                line-height: 1.8;
+                color: #444;
+                position: absolute;
+                left: -2.2em;
+                text-align: right;
+            }
+        }
+    }
+    &__note{
+        @include var.fz(15);
+        line-height: 1.8;
+        color: #444;
+        text-indent: -0.5em;
+        padding-left: 0.5em;
+        margin-bottom: 1.8em;
+    }
+    @media screen and (max-width: var.$spbp) {
+        &__txt{
+            @include var.fz(11);
+            line-height: 1.4;
+            margin: 0 0 1.4em;
+            &-b{
+                @include var.fz(11);
+                line-height: 1.4;
+            }
+        }
+        &__box{
+            margin-top: 1em;
+            li{
+                @include var.fz(11);
+                line-height: 1.4;
+                color: #444;
+                margin-bottom: 2em;
+                &::before{
+                    counter-increment: item;
+                    content: counter(item) ".";
+                    @include var.fz(11);
+                    line-height: 1.4;
+                    color: #444;
+    
+                    position: absolute;
+                    left: -1.6em;
+                }
+            }
+        }
+        &__alp{
+            counter-reset: num;
+            padding-left: 1em;
+            margin-left: 0;
+            li{
+                @include var.fz(11);
+                line-height: 1.4;
+                margin-bottom: 1em;
+                &::before{
+                    counter-increment: num;
+                    content: "(" counter(num, lower-alpha) ")";
+                    @include var.fz(11);
+                    line-height: 1.4;
+                    color: #444;
+                    position: absolute;
+                    left: -1.6em;
+                }
+            }
+        }
+        &__greek{
+            counter-reset: greek;
+            padding-left: 1em;
+            margin-left: 0.6em;
+            margin-top: 1em;
+    
+            li{
+                @include var.fz(11);
+                line-height: 1.4;
+                margin-bottom: 1em;
+                &::before{
+                    counter-increment: greek;
+                    content: "(" counter(greek, lower-roman) ")";
+                    @include var.fz(11);
+                    line-height: 1.4;
+                    color: #444;
+                    position: absolute;
+                    left: -1.6em;
+                }
+            }
+        }
+        &__note{
+            @include var.fz(11);
+            line-height: 1.4;
+            color: #444;
+            text-indent: -0.5em;
+            padding-left: 0.5em;
+            margin-bottom: 1.8em;
+        }
+    }
+
+}
+.policymain{
+    background: url('../img/bg_wood02.jpg') repeat-y;
+    width: 100%;
+    padding: 108px 0;
+    &__box{
+        display: flex;
+        justify-content: center;
+    }
+    &__ttl{
+
+        text-align: center;
+        
+        a{
+            @include var.bg();
+            background-image: url('../img/logo_policy.png');
+            background-repeat: no-repeat;
+            width: 290px;
+            height: 126px;
+            margin: 0 auto 50px;
+        }   
+    }
+    &__subttl{
+        text-align: center;
+        font-weight: bold;
+        @include var.fz(32);
+        margin: 0 auto 12px;
+
+        &-en{
+            text-align: center;
+            font-weight: bold;
+            margin: 0 auto 60px;
+
+    
+        }
+    }
+    &__inner{
+        background: #FFF;
+        padding: 60px 40px;
+        max-width: 720px;
+        margin: 0 auto;
+        border-radius: 3px;
+        box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
+
+    }
+    &__top{
+        display: block;
+        margin: 30px 10px;
+        color: #000;
+        text-align: center;
+        a{
+            text-decoration: underline;
+        }
+        text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+        -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+        0px 1px 0 #FFF,  0-1px 0 #FFF,
+        -1px 0 0 #FFF, 1px 0 0 #FFF;
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 15vw 0;
+        &__ttl{
+            text-align: center;
+            a{
+                @include var.bg();
+                background-image: url('../img/logo_policy.png');
+                background-repeat: no-repeat;
+                width: 40.2vw;
+                height: 17.5vw;
+                margin: 0 auto 8vw;
+            }   
+        }
+        &__subttl{
+            @include var.fz(24);
+            margin: 0 auto 0.5em;
+            text-align: center;
+
+
+        &-en{
+
+            margin: 0 auto 10vw;
+
+    
+        
+        }
+    }
+        &__inner{
+            background: #FFF;
+            padding: 10vw 5vw;
+            max-width: 100%;
+            width: 90%;    
+        }
+        &__top{
+
+        }
+    }
+}

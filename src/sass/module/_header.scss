@@ -1,0 +1,59 @@
+@use "./module/variable"as var;
+
+.header{
+    &__fv{
+        @include var.bg();
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        width: 100%;
+        height: 100dvh;
+    }
+    &__comsoon{
+        @include var.bg();
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url('../img/commingsoon.png');
+        width: 41.9vw;
+        height: 10vw;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+    }
+    @media screen and (max-width: var.$spbp) {
+        &__fv{
+            @include var.bg();
+            background-size: cover;
+            background-position: top center;
+            height: 100vh;
+            width: 100%;
+            height: 100dvh;
+        }
+        &__comsoon{
+display: none;
+
+        }
+    }
+}
+.webp{
+    .header__fv{
+        background-image: url('../img/fv_pc-mod.webp');
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/fv_sp.webp');
+
+        }
+    }
+}
+.no-webp{
+    .header__fv{
+        background-image: url('../img/fv_pc-mod.jpg');
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/fv_sp.jpg') no-repeat;
+            
+        }
+    }
+}

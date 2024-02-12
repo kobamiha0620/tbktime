@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/users/1/candypop.jp-tabekkotimetest/web/.htpasswd
+require valid-user
