@@ -87,24 +87,23 @@ a{
             height: 45px;
             background-size: cover;
             background-repeat: no-repeat;
-
         }
     }
     @media screen and (max-width: var.$spbp) {
-        width: 320px;
-        height: 147px;
+        width: 238px;
+        height: 108px;
         box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
         &__flx{
             display: flex;
             justify-content: space-between;
-            width: 265px;
+            width: 192px;
             margin:  0 auto;
-            padding: 74px 0 0;
+            padding: 56px 0 0;
             &--x{
                 @include var.bg();
                 background-image: url('../img/btn_x-fix.png');
-                width: 116px;
-                height: 45px;
+                width: 83px;
+                height: 33px;
                 background-size: cover;
                 background-repeat: no-repeat;
     
@@ -112,8 +111,8 @@ a{
             &--insta{
                 @include var.bg();
                 background-image: url('../img/btn_insta-fix.png');
-                width: 144px;
-                height: 45px;
+                width: 104px;
+                height: 33px;
                 background-size: cover;
                 background-repeat: no-repeat;
     

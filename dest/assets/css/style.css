@@ -583,7 +583,7 @@ th {
 }
 
 .webp .header__fv {
-  background-image: url("../img/fv_pc-mod.webp");
+  background-image: url("../img/fv_pc-mod4.webp");
 }
 @media screen and (max-width: 768px) {
   .webp .header__fv {
@@ -592,7 +592,7 @@ th {
 }
 
 .no-webp .header__fv {
-  background-image: url("../img/fv_pc-mod.jpg");
+  background-image: url("../img/fv_pc-mod4.jpg");
 }
 @media screen and (max-width: 768px) {
   .no-webp .header__fv {
@@ -618,29 +618,29 @@ th {
   height: auto;
 }
 .main .top {
-  background-image: url("../img/bg_top.png");
+  background-image: url("../img/bg_top-mod.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 0;
-  padding-top: 60px;
-  width: 720px;
+  padding-top: 64px;
+  width: 800px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 .main .btm {
-  background-image: url("../img/bg_btm.png");
+  background-image: url("../img/bg_btm-mod.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: right 0 bottom 0;
-  padding-bottom: 60px;
+  padding-bottom: 64px;
 }
 .main .inner {
-  background-image: url("../img/bg_m.png");
+  background-image: url("../img/bg_mdl-mod.png");
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-position: 0 0;
-  padding: 0 60px;
+  padding: 0 64px;
 }
 .main__feature {
   background-image: url("../img/bg_obi.jpg");
@@ -665,20 +665,21 @@ th {
   background-size: cover;
 }
 .main__intro--inner {
-  width: 720px;
+  width: 800px;
   margin: 0 auto;
 }
 .main__intro--camp {
-  background-image: url("../img/bg_camp.png");
+  background-image: url("../img/bg_camp-mod-pc.png");
   margin: 60px 0 0;
-  background-size: cover;
+  background-size: 100% auto;
   position: relative;
+  background-repeat: no-repeat;
 }
 .main__intro--camp-box {
   display: flex;
   justify-content: space-between;
-  width: 600px;
-  padding: 210px 0 168px;
+  width: 667px;
+  padding: 230px 0 182px;
   margin: 0 auto;
 }
 .main__intro--lion {
@@ -719,8 +720,8 @@ th {
   display: block;
   background-size: 100% auto;
   background-image: url("../img/btn_x.png");
-  width: 267px;
-  height: 88px;
+  width: 297px;
+  height: 97px;
   background-size: cover;
 }
 .main__intro--insta {
@@ -731,13 +732,14 @@ th {
   display: block;
   background-size: 100% auto;
   background-image: url("../img/btn_insta.png");
-  width: 321px;
-  height: 88px;
+  width: 357px;
+  height: 97px;
   background-size: cover;
 }
 .main__intro--bnr1 {
   padding-top: 20px;
   display: block;
+  margin: 0 -100px;
 }
 .main__intro--bnr2 {
   padding-top: 50px;
@@ -761,7 +763,7 @@ th {
   padding: 0 55px;
 }
 .main__campagin--bnr {
-  padding-top: 272px;
+  padding-top: 300px;
 }
 .main__campagin--bnr5 {
   display: block;
@@ -827,8 +829,8 @@ th {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 0;
-  padding-top: 205px;
-  width: 720px;
+  padding-top: 228px;
+  width: 800px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
@@ -872,6 +874,7 @@ th {
     margin: 0 auto;
   }
   .main__intro--camp {
+    background-image: url("../img/bg_camp-mod.png");
     margin: 7vw 0 0;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -913,6 +916,7 @@ th {
   }
   .main__intro--bnr1 {
     padding-top: 5vw;
+    margin: 0 auto;
   }
   .main__intro--bnr2 {
     padding-top: 50px;
@@ -1035,7 +1039,6 @@ th {
   margin-bottom: 2em;
 }
 .policy__box li a {
-  font-size: 0.8em;
   word-break: break-all;
 }
 .policy__box li::before {
@@ -1230,7 +1233,7 @@ th {
 .policymain__inner {
   background: #FFF;
   padding: 60px 40px;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   border-radius: 3px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -1359,16 +1362,16 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .fixedbnr {
-    width: 320px;
-    height: 147px;
+    width: 238px;
+    height: 108px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   }
   .fixedbnr__flx {
     display: flex;
     justify-content: space-between;
-    width: 265px;
+    width: 192px;
     margin: 0 auto;
-    padding: 74px 0 0;
+    padding: 56px 0 0;
   }
   .fixedbnr__flx--x {
     background-size: 100% auto;
@@ -1378,8 +1381,8 @@ a:hover {
     display: block;
     background-size: 100% auto;
     background-image: url("../img/btn_x-fix.png");
-    width: 116px;
-    height: 45px;
+    width: 83px;
+    height: 33px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1391,8 +1394,8 @@ a:hover {
     display: block;
     background-size: 100% auto;
     background-image: url("../img/btn_insta-fix.png");
-    width: 144px;
-    height: 45px;
+    width: 104px;
+    height: 33px;
     background-size: cover;
     background-repeat: no-repeat;
   }

@@ -28,7 +28,6 @@
             color: #444;
             margin-bottom: 2em;
             a{
-                font-size: 0.8em;
                 word-break: break-all;
             }
             &::before{
@@ -214,7 +213,7 @@
     &__inner{
         background: #FFF;
         padding: 60px 40px;
-        max-width: 720px;
+        max-width: 960px;
         margin: 0 auto;
         border-radius: 3px;
         box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);

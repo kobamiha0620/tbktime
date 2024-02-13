@@ -41,7 +41,7 @@ display: none;
 }
 .webp{
     .header__fv{
-        background-image: url('../img/fv_pc-mod.webp');
+        background-image: url('../img/fv_pc-mod4.webp');
         @media screen and (max-width: var.$spbp) {
             background-image: url('../img/fv_sp.webp');
 
@@ -50,7 +50,7 @@ display: none;
 }
 .no-webp{
     .header__fv{
-        background-image: url('../img/fv_pc-mod.jpg');
+        background-image: url('../img/fv_pc-mod4.jpg');
         @media screen and (max-width: var.$spbp) {
             background-image: url('../img/fv_sp.jpg') no-repeat;
             
