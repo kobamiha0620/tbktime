@@ -9,6 +9,7 @@
         width: 100%;
         height: 100dvh;
     }
+
     &__comsoon{
         @include var.bg();
         background-size: cover;
@@ -23,6 +24,17 @@
         transform: translate(-50%, 0);
         -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
+    }
+    //タブレット対応 --------------------- /////////////////--------------------------------
+    @media screen and (max-width: var.$tabw) {
+        &__fv{
+            @include var.bg();
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            width: 100%;
+            height: 100dvh;
+        }
     }
     @media screen and (max-width: var.$spbp) {
         &__fv{
@@ -42,6 +54,14 @@ display: none;
 .webp{
     .header__fv{
         background-image: url('../img/fv_pc-mod4.webp');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/bg_fv-tb-big.webp');
+
+        }
+        @media screen and (max-width: 800px) {
+            background-image: url('../img/bg_fv-tb.webp');
+
+        }
         @media screen and (max-width: var.$spbp) {
             background-image: url('../img/fv_sp.webp');
 
@@ -51,6 +71,14 @@ display: none;
 .no-webp{
     .header__fv{
         background-image: url('../img/fv_pc-mod4.jpg');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/bg_fv-tb-big.jpg');
+
+        }
+        @media screen and (max-width: 800px) {
+            background-image: url('../img/bg_fv-tb.jpg');
+
+        }
         @media screen and (max-width: var.$spbp) {
             background-image: url('../img/fv_sp.jpg') no-repeat;
             
