@@ -1610,3 +1610,19 @@ a:hover {
   opacity: 1;
   transform: translateY(0px);
 }
+
+.fixedbnr {
+  background-image: url("../img/fixedbnr_mod.png");
+  height: 151px;
+}
+.fixedbnr__flx {
+  padding-top: 80px;
+}
+@media screen and (max-width: 599px) {
+  .fixedbnr {
+    height: 113px;
+  }
+  .fixedbnr__flx {
+    padding-top: 60px;
+  }
+}
