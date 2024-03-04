@@ -142,3 +142,19 @@ a{
 	opacity: 1;
 	transform: translateY(0px);
 }
+
+//CampaignBnr 変更部分
+.fixedbnr{
+    background-image: url('../img/fixedbnr_mod.png');
+    height: 151px;
+    &__flx{
+        padding-top: 80px;
+
+    }
+    @media screen and (max-width: var.$spbp) {
+        height: 113px;
+        &__flx{
+            padding-top: 60px;
+        }
+    }
+}

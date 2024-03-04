@@ -88,7 +88,6 @@
         &--hipo{
             @include var.bg();
             background-image: url('../img/img_hipo.png');
-
             width: 128px;
             height: 172px;
             background-size: cover;
@@ -178,6 +177,7 @@
     }
     &__comb{
         background-image: url('../img/bg_wood01b.jpg');
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 100%;
         padding: 108px 0;
@@ -556,7 +556,7 @@
 
 
 
-//タブレット対応
+//タブレット対応 ----------
 @media screen and (max-width: var.$tabw) {
 
 }
@@ -564,5 +564,247 @@
 //0222 ____campaign変更 -----------------
 .main__intro--camp{
     background-image: url('../img/bg_campaign_mod.png');
+
+}
+
+//0227 ____campaign変更 -----------------
+.main__comb{
+    .inner{
+        padding-bottom: 64px;
+    }
+    .btm{
+        padding-bottom: 0;
+    }
+    
+    &--mtxt{
+        color: #000;
+        line-height: 1.8;
+        @include var.fz(18);
+    }
+    &--txt2{
+        color: #000;
+        line-height: 1.6;
+        @include var.fz(16);
+        padding: 0 0 1em 1em;
+    }
+    &--campaign{
+        background-color: #d70066;
+        position: relative;
+        padding-bottom: 100px;
+        &-inner{
+            position: relative;
+            padding: 0 50px;
+        }
+        .main__comb--txt{
+            color: #000;
+        }
+    }
+    &--campbox01{
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 0 0 60px;
+        position: relative;
+        &-subttl{
+            @include var.bg();
+            background-image: url('../img/img_subttl-camp01b.png');
+            width: 100%;
+            padding-top: 19.87%;
+            margin: 0 0 10px;
+            font-size:0;
+            line-height: 0;
+        }
+    }
+    &--campbox02{
+        background-color: rgba(255, 255, 0, 0.9);
+        border-radius: 10px;
+        padding: 30px;
+        &-subttl{
+            @include var.bg();
+            background-image: url('../img/img_subttl-camp02.png');
+            width: 100%;
+            padding-top: 14.2%;
+            margin: 0 0 10px;
+            font-size:0;
+            line-height: 0;
+        }
+    }
+    &--txtblc{
+        border-top: dashed 2px #000;
+        padding: 20px 0 6px;
+        margin-top: 30px;
+    }
+    &--nekowani{
+        position: absolute;
+        width: 284px;
+        height: 181px;
+        right: 1px;
+        bottom: -72px;
+    }
+    &--lion{
+        position: absolute;
+        left: 0;
+        top: -100px;
+        width: 165px;
+        height: 225px;
+    }
+    &--monky{
+        position: absolute;
+        left: -50px;
+        bottom: -148px;
+        width: 125px;
+        height: 177px;
+    }
+    &--hipo{
+        position: absolute;
+        right: -50px;
+        bottom: -150px;
+        width: 150px;
+        height: 214px;
+    }
+
+    //タブレット対応 ----------
+    @media screen and (max-width: var.$tabw) {
+        &--campaign{
+
+            &-inner{
+                position: relative;
+                padding: 0 5vw;
+            }
+
+        }
+        &--nekowani{
+            position: absolute;
+            width: 31.6%;
+            height: 20.1vw;
+            right: 1px;
+            bottom: -10.22vw;
+        }
+        &--lion{
+            position: absolute;
+            left: 0;
+            top: -11.1vw;
+            width: 18.3vw;
+            height: 25vw;
+        }
+        &--monky{
+            position: absolute;
+            left: -5vw;
+            bottom: -16.4vw;
+            width: 13.8vw;
+            height: 19.7vw;
+        }
+        &--hipo{
+            position: absolute;
+            right:-5vw;
+            bottom: -16vw;
+            width: 16.7vw;
+            height: 23.8vw;
+        }
+    }
+
+    //SP対応 ----------
+    @media screen and (max-width: var.$spbp) {
+        .inner{
+            padding-bottom: 7.2vw;
+        }
+        
+        &--mtxt{
+            line-height: 1.6;
+            @include var.fz(14);
+        }
+        &--txt2{
+            line-height: 1.4;
+            @include var.fz(12);
+            padding: 0 0 1em 1em;
+        }
+        &--campaign{
+
+            padding-bottom: 15vw;
+            &-inner{
+                position: relative;
+                padding: 0 5vw;
+            }
+            .main__comb--txt{
+                color: #000;
+            }
+        }
+        &--campbox01{
+            padding: 6vw;
+            margin: 0 0 4vw;
+            
+            &-subttl{
+                @include var.bg();
+                background-image: url('../img/img_subttl-camp01b.png');
+                width: 100%;
+                padding-top: 19.87%;
+                margin: 0 0 10px;
+
+            }
+        }
+        &--campbox02{
+            background-color: rgba(255, 255, 0, 0.9);
+            border-radius: 10px;
+            padding: 6vw;
+
+            &-subttl{
+                @include var.bg();
+                background-image: url('../img/img_subttl-camp02.png');
+                width: 100%;
+                padding-top: 14.2%;
+                margin: 0 0 10px;
+            }
+        }
+        &--txtblc{
+            border-top: dashed 2px #000;
+            padding: 20px 0 6px;
+            margin-top: 5vw;
+        }
+    }
+}
+
+.main__comb--notice{
+    color: #FFF;
+    @include var.fz(18);
+    line-height: 1.5;
+    margin: 10px 0 0;
+    @media screen and (max-width: var.$spbp) {
+        @include var.fz(14);
+
+    }
+}
+
+
+.main__comb--linktxt{
+    color: #5a0825;
+    @include var.fz(18);
+
+    line-height: 1.5;
+    a{
+        text-decoration: underline;
+    }
+}
+.main__comb--linktxt2{
+    color: #5a0825;
+    @include var.fz(18);
+    padding-left: 4em;
+    margin: 0 0 10px;
+    line-height: 1.5;
+    a{
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+}
+@media screen and (max-width: var.$spbp) {
+    .main__comb--linktxt, .main__comb--linktxt2{
+        @include var.fz(14);
+    }
+    .main__comb--linktxt2{
+        padding-left: 0;
+    }
+
 
 }
