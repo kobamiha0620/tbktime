@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -434,13 +435,11 @@ th {
 .notice, .footer__links li a, .footer__btmnotice, .footer__notice {
   color: #FFFFFF;
   font-size: 0.875rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
 }
 @media screen and (max-width: 599px) {
   .notice, .footer__links li a, .footer__btmnotice, .footer__notice {
     font-size: 0.75rem;
-    font-family: "Noto Sans JP", sans-serif;
   }
 }
 
@@ -638,13 +637,11 @@ th {
 .notice, .main__comb--txt, .main__campagin--txt, .main__intro--notice {
   color: #FFFFFF;
   font-size: 0.875rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
 }
 @media screen and (max-width: 599px) {
   .notice, .main__comb--txt, .main__campagin--txt, .main__intro--notice {
     font-size: 0.75rem;
-    font-family: "Noto Sans JP", sans-serif;
   }
 }
 
@@ -1218,13 +1215,11 @@ th {
   color: #000;
   line-height: 1.8;
   font-size: 1.125rem;
-  font-family: "Noto Sans JP", sans-serif;
 }
 .main__comb--txt2 {
   color: #000;
   line-height: 1.6;
   font-size: 1rem;
-  font-family: "Noto Sans JP", sans-serif;
   padding: 0 0 1em 1em;
 }
 .main__comb--campaign {
@@ -1353,12 +1348,10 @@ th {
   .main__comb--mtxt {
     line-height: 1.6;
     font-size: 0.875rem;
-    font-family: "Noto Sans JP", sans-serif;
   }
   .main__comb--txt2 {
     line-height: 1.4;
     font-size: 0.75rem;
-    font-family: "Noto Sans JP", sans-serif;
     padding: 0 0 1em 1em;
   }
   .main__comb--campaign {
@@ -1414,21 +1407,18 @@ th {
 .main__comb--notice {
   color: #FFF;
   font-size: 1.125rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
   margin: 10px 0 0;
 }
 @media screen and (max-width: 599px) {
   .main__comb--notice {
     font-size: 0.875rem;
-    font-family: "Noto Sans JP", sans-serif;
   }
 }
 
 .main__comb--linktxt {
   color: #5a0825;
   font-size: 1.125rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
 }
 .main__comb--linktxt a {
@@ -1438,7 +1428,6 @@ th {
 .main__comb--linktxt2 {
   color: #5a0825;
   font-size: 1.125rem;
-  font-family: "Noto Sans JP", sans-serif;
   padding-left: 4em;
   margin: 0 0 10px;
   line-height: 1.5;
@@ -1450,27 +1439,37 @@ th {
 @media screen and (max-width: 599px) {
   .main__comb--linktxt, .main__comb--linktxt2 {
     font-size: 0.875rem;
-    font-family: "Noto Sans JP", sans-serif;
   }
   .main__comb--linktxt2 {
     padding-left: 0;
   }
 }
+.policymain li {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.policymain p, .policymain h2 {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+
+.policy__underline {
+  text-decoration: underline;
+}
 .policy__txt {
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   margin: 0 0 1.8em;
 }
 .policy__txt-b {
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   margin: 2em 0 0;
   text-indent: -1em;
   padding-left: 1em;
+}
+.policy__txt.centre {
+  text-align: center;
 }
 .policy__box {
   counter-reset: item;
@@ -1482,7 +1481,6 @@ th {
   position: relative;
   line-height: 1.8;
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   color: #444;
   margin-bottom: 2em;
 }
@@ -1494,7 +1492,6 @@ th {
   content: counter(item) ".";
   line-height: 1.8;
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   color: #444;
   position: absolute;
   left: -1.6em;
@@ -1504,10 +1501,10 @@ th {
   padding-left: 1em;
   margin-left: 0.6em;
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 .policy__alp li {
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   margin-bottom: 1em;
@@ -1516,7 +1513,6 @@ th {
   counter-increment: num;
   content: "(" counter(num, lower-alpha) ")";
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   position: absolute;
@@ -1530,7 +1526,6 @@ th {
 }
 .policy__greek li {
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   margin-bottom: 1em;
@@ -1539,16 +1534,18 @@ th {
   counter-increment: greek;
   content: "(" counter(greek, lower-roman) ")";
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   position: absolute;
   left: -2.2em;
   text-align: right;
 }
+.policy__ttl {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
 .policy__note {
   font-size: 0.9375rem;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   color: #444;
   text-indent: -0.5em;
@@ -1558,13 +1555,11 @@ th {
 @media screen and (max-width: 599px) {
   .policy__txt {
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     margin: 0 0 1.4em;
   }
   .policy__txt-b {
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
   }
   .policy__box {
@@ -1572,7 +1567,6 @@ th {
   }
   .policy__box li {
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     color: #444;
     margin-bottom: 2em;
@@ -1581,7 +1575,6 @@ th {
     counter-increment: item;
     content: counter(item) ".";
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     color: #444;
     position: absolute;
@@ -1594,7 +1587,6 @@ th {
   }
   .policy__alp li {
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     margin-bottom: 1em;
   }
@@ -1602,7 +1594,6 @@ th {
     counter-increment: num;
     content: "(" counter(num, lower-alpha) ")";
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     color: #444;
     position: absolute;
@@ -1616,7 +1607,6 @@ th {
   }
   .policy__greek li {
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     margin-bottom: 1em;
   }
@@ -1624,7 +1614,6 @@ th {
     counter-increment: greek;
     content: "(" counter(greek, lower-roman) ")";
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     color: #444;
     position: absolute;
@@ -1632,7 +1621,6 @@ th {
   }
   .policy__note {
     font-size: 0.6875rem;
-    font-family: "Noto Sans JP", sans-serif;
     line-height: 1.4;
     color: #444;
     text-indent: -0.5em;
@@ -1670,7 +1658,6 @@ th {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
-  font-family: "Noto Sans JP", sans-serif;
   margin: 0 auto 12px;
 }
 .policymain__subttl-en {
@@ -1718,7 +1705,6 @@ th {
   }
   .policymain__subttl {
     font-size: 1.5rem;
-    font-family: "Noto Sans JP", sans-serif;
     margin: 0 auto 0.5em;
     text-align: center;
   }

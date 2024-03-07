@@ -1,0 +1,160 @@
+@use "./reset";
+@use "./module/variable"as var;
+@use "./module/*";
+
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    //PC対応
+
+    //タブレット対応
+    @media screen and (max-width: var.$tabw) {
+
+    }
+    //SP対応
+    @media screen and (max-width: var.$spbp) {
+
+    }
+}
+
+.footer{
+    //PC対応
+
+    //タブレット対応
+    @media screen and (max-width: var.$tabw) {
+
+    }
+    //SP対応
+    @media screen and (max-width: var.$spbp) {
+
+    }
+}
+
+
+
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.8s, transform 1.2s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
+
+a{
+    &:hover{
+        opacity: 0.7;
+    }
+    @media screen and (max-width: var.$spbp) {
+        &:hover{
+            opacity: 1;
+        }
+    }
+    
+}
+
+
+.fixedbnr{
+    position: fixed;
+    right: 0;
+    bottom: 5vw;
+    background-image: url('../img/fixedbnr.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 320px;
+    height: 147px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
+    transition: .3s;
+
+    &__flx{
+        display: flex;
+        justify-content: space-between;
+        width: 265px;
+        margin:  0 auto;
+        padding: 74px 0 0;
+        &--x{
+            @include var.bg();
+            background-image: url('../img/btn_x-fix.png');
+            width: 116px;
+            height: 45px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        &--insta{
+            @include var.bg();
+            background-image: url('../img/btn_insta-fix.png');
+            width: 144px;
+            height: 45px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 238px;
+        height: 108px;
+        box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
+        &__flx{
+            display: flex;
+            justify-content: space-between;
+            width: 192px;
+            margin:  0 auto;
+            padding: 56px 0 0;
+            &--x{
+                @include var.bg();
+                background-image: url('../img/btn_x-fix.png');
+                width: 83px;
+                height: 33px;
+                background-size: cover;
+                background-repeat: no-repeat;
+    
+            }
+            &--insta{
+                @include var.bg();
+                background-image: url('../img/btn_insta-fix.png');
+                width: 104px;
+                height: 33px;
+                background-size: cover;
+                background-repeat: no-repeat;
+    
+            }
+        }
+    }
+}
+
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.5s, transform 1s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+//CampaignBnr 変更部分
+.fixedbnr{
+    background-image: url('../img/fixedbnr_mod.png');
+    height: 151px;
+    &__flx{
+        padding-top: 80px;
+
+    }
+    @media screen and (max-width: var.$spbp) {
+        height: 113px;
+        &__flx{
+            padding-top: 60px;
+        }
+    }
+}

@@ -1,6 +1,18 @@
 @use "./module/variable"as var;
 
+.policymain{
+    li{
+        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    }
+    p, h2{
+        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    }
+}
 .policy{
+
+    &__underline{
+        text-decoration: underline;
+    }
     &__txt{
         @include var.fz(15);
         line-height: 1.8;
@@ -13,6 +25,9 @@
             margin: 2em 0 0;
             text-indent: -1em;
             padding-left: 1em;
+        }
+        &.centre{
+            text-align: center;
         }
     }
     &__box{
@@ -47,7 +62,7 @@
         padding-left: 1em;
         margin-left: 0.6em;
         margin-top: 1em;
-
+        margin-bottom: 2em;
         li{
             @include var.fz(15);
             line-height: 1.8;
@@ -87,6 +102,10 @@
             }
         }
     }
+    &__ttl{
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
     &__note{
         @include var.fz(15);
         line-height: 1.8;
@@ -112,6 +131,7 @@
                 line-height: 1.4;
                 color: #444;
                 margin-bottom: 2em;
+
                 &::before{
                     counter-increment: item;
                     content: counter(item) ".";

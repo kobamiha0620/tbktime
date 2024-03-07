@@ -22,7 +22,6 @@ $maxW: 800px;
 }
 @mixin fz($size) {
 	font-size: calc($size / 16) + rem;
-    font-family:  'Noto Sans JP', sans-serif;
 }
 
 @keyframes fadeInAnime{
