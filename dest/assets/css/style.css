@@ -634,6 +634,80 @@ th {
   }
 }
 
+.webp .header__fv {
+  background-image: url("../img/fv_pc-0311.webp");
+}
+@media screen and (max-width: 1025px) {
+  .webp .header__fv {
+    background-image: url("../img/bg_fv-tb-big0311.webp");
+  }
+}
+@media screen and (max-width: 800px) {
+  .webp .header__fv {
+    background-image: url("../img/bg_fv-tb0311.webp");
+  }
+}
+@media screen and (max-width: 599px) {
+  .webp .header__fv {
+    background-image: url("../img/fv_sp0311.webp");
+  }
+}
+.webp .header__fv.img0318 {
+  background-image: url("../img/fv_pc-0318.webp");
+}
+@media screen and (max-width: 1025px) {
+  .webp .header__fv.img0318 {
+    background-image: url("../img/bg_fv-tb-big0318.webp");
+  }
+}
+@media screen and (max-width: 800px) {
+  .webp .header__fv.img0318 {
+    background-image: url("../img/bg_fv-tb0318.webp");
+  }
+}
+@media screen and (max-width: 599px) {
+  .webp .header__fv.img0318 {
+    background-image: url("../img/fv_sp0318.webp");
+  }
+}
+
+.no-webp .header__fv {
+  background-image: url("../img/fv_pc-0311.jpg");
+}
+@media screen and (max-width: 1025px) {
+  .no-webp .header__fv {
+    background-image: url("../img/bg_fv-tb-big0311.jpg");
+  }
+}
+@media screen and (max-width: 800px) {
+  .no-webp .header__fv {
+    background-image: url("../img/bg_fv-tb0311.jpg");
+  }
+}
+@media screen and (max-width: 599px) {
+  .no-webp .header__fv {
+    background-image: url("../img/fv_sp0311.jpg") no-repeat;
+  }
+}
+.no-webp .header__fv.img0318 {
+  background-image: url("../img/fv_pc-0318.jpg");
+}
+@media screen and (max-width: 1025px) {
+  .no-webp .header__fv.img0318 {
+    background-image: url("../img/bg_fv-tb-big0318.jpg");
+  }
+}
+@media screen and (max-width: 800px) {
+  .no-webp .header__fv.img0318 {
+    background-image: url("../img/bg_fv-tb0318.jpg");
+  }
+}
+@media screen and (max-width: 599px) {
+  .no-webp .header__fv.img0318 {
+    background-image: url("../img/fv_sp0318.jpg") no-repeat;
+  }
+}
+
 .notice, .main__comb--txt, .main__campagin--txt, .main__intro--notice {
   color: #FFFFFF;
   font-size: 0.875rem;
@@ -1444,6 +1518,181 @@ th {
     padding-left: 0;
   }
 }
+.main .inner {
+  margin-top: -1px;
+}
+.main .mt10 {
+  margin-top: 10px;
+}
+.main__intro--camp {
+  background-image: url("../img/bg_campaign_0311.png");
+  margin: 60px 0 0;
+  background-size: 100% auto;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.main__intro--camp-box {
+  display: flex;
+  justify-content: space-between;
+  width: 667px;
+  padding: 142px 0 79px;
+  margin: 0 auto;
+}
+.main__intro--x {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% auto;
+  background-image: url("../img/btn_x-mod.png");
+  width: 299px;
+  height: 80px;
+  background-size: cover;
+}
+.main__intro--insta {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% auto;
+  background-image: url("../img/btn_insta-mod.png");
+  width: 359px;
+  height: 80px;
+  background-size: cover;
+}
+.main__intro--camp {
+  margin-bottom: 24px;
+}
+.main__intro--camp-app {
+  display: flex;
+  justify-content: space-between;
+  width: 566px;
+  padding: 0 0 53px;
+  margin: 0 auto;
+}
+.main__intro--camp-app01 {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% auto;
+  background-image: url("../img/btn_app_origin_0311.png");
+  width: 242px;
+  height: 89px;
+  background-size: cover;
+}
+.main__intro--camp-app02 {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% auto;
+  background-image: url("../img/btn_google_origin_0311.png");
+  width: 301px;
+  height: 89px;
+  background-size: cover;
+}
+.main__intro--lion {
+  left: -52px;
+  bottom: -18px;
+}
+.main__intro--hipo {
+  right: -35px;
+  bottom: -18px;
+}
+.main__intro--notice02 {
+  text-align: left;
+  color: #FFF;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  text-indent: -1em;
+  padding-left: 1em;
+  margin: 0 0 5px;
+}
+@media screen and (max-width: 1025px) {
+  .main__intro {
+    padding: 5vw 0 15vw;
+  }
+  .main__intro--inner {
+    width: 100%;
+    padding: 0 5vw;
+    margin: 0 auto;
+  }
+  .main__intro--camp {
+    margin: 5vw 0 5vw;
+    background-size: 100% auto;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0 5vw;
+  }
+  .main__intro--camp-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 21% 2.6% 12%;
+    margin: 0 auto;
+  }
+  .main__intro--camp-app {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0 0 12%;
+    margin: 0 auto;
+  }
+  .main__intro--camp-app01 {
+    width: 27vw;
+    height: 10vw;
+    background-size: cover;
+  }
+  .main__intro--camp-app02 {
+    width: 34vw;
+    height: 10vw;
+    background-size: cover;
+  }
+  .main__intro--lion {
+    left: -5vw;
+    bottom: -4vw;
+  }
+  .main__intro--hipo {
+    bottom: -4vw;
+    right: -2vw;
+  }
+  .main__intro--x {
+    width: 33.6vw;
+    height: 8.9vw;
+    background-size: cover;
+  }
+  .main__intro--insta {
+    width: 40.3vw;
+    height: 8.9vw;
+    background-size: cover;
+  }
+  .main__intro--bnr1 {
+    padding-top: 2.3vw;
+    display: block;
+    margin: 0 auto;
+  }
+  .main__intro--bnr2 {
+    padding-top: 5.7vw;
+    display: block;
+  }
+  .main__intro--bnr3 {
+    padding-top: 2.3vw;
+    display: block;
+  }
+  .main__intro--notice {
+    text-align: right;
+  }
+  .main__intro--notice.minus {
+    margin-top: -3.5vw;
+  }
+}
+
 .policymain li {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
@@ -1754,6 +2003,7 @@ a:hover {
   right: 0;
   bottom: 5vw;
   background-image: url("../img/fixedbnr.png");
+  background-image: url("../img/bg_fixbnr_0311.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   width: 320px;
@@ -1847,7 +2097,7 @@ a:hover {
 }
 
 .fixedbnr {
-  background-image: url("../img/fixedbnr_mod.png");
+  background-image: url("../img/bg_fixbnr_0311.png");
   height: 151px;
 }
 .fixedbnr__flx {

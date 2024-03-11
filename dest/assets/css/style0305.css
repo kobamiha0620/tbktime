@@ -1444,6 +1444,10 @@ th {
     padding-left: 0;
   }
 }
+.main .inner {
+  margin-top: -1px;
+}
+
 .policymain li {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }

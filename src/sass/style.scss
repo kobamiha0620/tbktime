@@ -70,6 +70,8 @@ a{
     right: 0;
     bottom: 5vw;
     background-image: url('../img/fixedbnr.png');
+    background-image: url('../img/bg_fixbnr_0311.png');
+
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 320px;
@@ -145,7 +147,7 @@ a{
 
 //CampaignBnr 変更部分
 .fixedbnr{
-    background-image: url('../img/fixedbnr_mod.png');
+    background-image: url('../img/bg_fixbnr_0311.png');
     height: 151px;
     &__flx{
         padding-top: 80px;
