@@ -179,12 +179,55 @@ a{
 
     &__flx{
         padding: 53px 0 0;
-
+        &--line{
+            @include var.bg();
+            background-image: url('../img/bg_linebtn-x.png');
+            width: 36px;
+            height: 36px;
+        }
+        &--insta{
+            background-image: url('../img/bg_instabtn-s.png');
+            width: 36px;
+            height: 36px;
+        }
+        &--x{
+            background-image: url('../img/bg_xbtn-s.png');
+            width: 36px;
+            height: 36px;
+        }
     }
     @media screen and (max-width: var.$spbp) {
         height: 118px;
         &__flx{
             padding-top: 40px;
         }
+    }
+}
+
+//0321変更部分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+.fixedbnr{
+    background-image: url('../img/bg_fixbnr_0321.png');
+    width: 286px;
+    height: 154px;
+    &__flx02{
+        width: 240px;
+        margin: 0 auto;
+        padding: 50px 0 0;
+        .main__intro--camp-app01{
+            width: 105px;
+            height: 39px;
+        }
+        .main__intro--camp-app02{
+            width: 131px;
+            height: 38.6px;
+        }
+    }
+    &__flx{
+        width: 146px;
+        margin: 0 auto;
+        padding: 10px 0 10px;
+    }
+    @media screen and (max-width: var.$spbp) {
+        
     }
 }

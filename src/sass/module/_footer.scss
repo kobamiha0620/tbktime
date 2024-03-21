@@ -19,9 +19,9 @@
     &__sns{
         display: flex;
         justify-content: center;
-        margin: 0 auto 32px;
+        margin: 0 auto 30px;
         li{
-            margin: 0 7px;
+            margin: 0 16px;
         }
         &--x{
             @include var.bg();
@@ -34,6 +34,13 @@
             background: url('../img/insta.svg') no-repeat;
             width: 40px;
             height: 40px;
+        }
+        &--line{
+            @include var.bg();
+            background: url('../img/line.png') no-repeat;
+            width: 38px;
+            height: 38px;
+            background-size: cover;
         }
 
     }

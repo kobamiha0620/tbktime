@@ -977,3 +977,65 @@
     }
 
 }
+
+
+// 0321 ---------------------------------------------------------------
+.main{
+    &__intro{
+        &--camp{
+            background-image: url('../img/bg_campaign0321.png');
+            &-app{
+                padding: 146px 0 0;
+                width: 570px;
+
+            }
+            &-box{
+                padding: 76px 0 47px;
+                width: 570px;
+            }
+        }
+        &--x{
+            background-image: url('../img/bg_xbtn.png');
+            width: 178px;
+            height: 80px;
+        }
+        &--insta{
+            background-image: url('../img/bg_instabtn.png');
+            width: 178px;
+            height: 80px;
+        }
+        &--line{
+            @include var.bg();
+            background-image: url('../img/bg_linebtn.png');
+            width: 178px;
+            height: 80px;
+        }
+    }
+    @media screen and (max-width: var.$tabw) {
+        &__intro{
+            &--camp{
+                &-app{
+                    padding: 16.43vw 0 0;
+                    width: 64vw;
+                }
+                &-box{
+                    padding: 8.55vw 0 5.3vw;
+                    width: 64vw;
+                }
+            }
+            &--x{
+                width: 20vw;
+                height: 8.9vw;
+            }
+            &--insta{
+                width: 20vw;
+                height: 8.9vw;
+            }
+            &--line{
+                @include var.bg();
+                width: 20vw;
+                height: 8.9vw;
+            }
+        }
+    }
+}
