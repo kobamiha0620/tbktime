@@ -2214,20 +2214,19 @@ a:hover {
   right: 0;
   bottom: 5vw;
   background-image: url("../img/fixedbnr.png");
-  background-image: url("../img/bg_fixbnr_0311.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 320px;
-  height: 147px;
+  width: 306px;
+  height: 153px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 .fixedbnr__flx {
   display: flex;
   justify-content: space-between;
-  width: 265px;
+  width: 260px;
   margin: 0 auto;
-  padding: 74px 0 0;
+  padding: 39px 0 0;
 }
 .fixedbnr__flx--x {
   background-size: 100% auto;
@@ -2236,9 +2235,9 @@ a:hover {
   background-repeat: no-repeat;
   display: block;
   background-size: 100% auto;
-  background-image: url("../img/btn_x-fix.png");
-  width: 116px;
-  height: 45px;
+  background-image: url("../img/btn_x-0311.png");
+  width: 111px;
+  height: 33px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2249,11 +2248,26 @@ a:hover {
   background-repeat: no-repeat;
   display: block;
   background-size: 100% auto;
-  background-image: url("../img/btn_insta-fix.png");
-  width: 144px;
-  height: 45px;
+  background-image: url("../img/btn_insta-0311.png");
+  width: 137px;
+  height: 33px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.fixedbnr__flx02 {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+  padding: 9px 0 19px;
+}
+.fixedbnr__flx02 .main__intro--camp-app01 {
+  width: 111px;
+  height: 41px;
+}
+.fixedbnr__flx02 .main__intro--camp-app02 {
+  width: 138px;
+  height: 41px;
 }
 @media screen and (max-width: 599px) {
   .fixedbnr {
@@ -2275,9 +2289,9 @@ a:hover {
     background-repeat: no-repeat;
     display: block;
     background-size: 100% auto;
-    background-image: url("../img/btn_x-fix.png");
+    background-image: url("../img/btn_x-0311.png");
     width: 83px;
-    height: 33px;
+    height: 25px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -2288,11 +2302,26 @@ a:hover {
     background-repeat: no-repeat;
     display: block;
     background-size: 100% auto;
-    background-image: url("../img/btn_insta-fix.png");
+    background-image: url("../img/btn_insta-0311.png");
     width: 104px;
-    height: 33px;
+    height: 25px;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .fixedbnr__flx02 {
+    display: flex;
+    justify-content: space-between;
+    width: 192px;
+    margin: 0 auto;
+    padding: 9px 0 14px;
+  }
+  .fixedbnr__flx02 .main__intro--camp-app01 {
+    width: 81px;
+    height: 30px;
+  }
+  .fixedbnr__flx02 .main__intro--camp-app02 {
+    width: 101px;
+    height: 30px;
   }
 }
 
@@ -2309,16 +2338,83 @@ a:hover {
 
 .fixedbnr {
   background-image: url("../img/bg_fixbnr_0311.png");
-  height: 151px;
 }
 .fixedbnr__flx {
-  padding-top: 80px;
+  padding: 53px 0 0;
+}
+.fixedbnr__flx--line {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% auto;
+  background-image: url("../img/bg_linebtn-x.png");
+  width: 36px;
+  height: 36px;
+}
+.fixedbnr__flx--insta {
+  background-image: url("../img/bg_instabtn-s.png");
+  width: 36px;
+  height: 36px;
+}
+.fixedbnr__flx--x {
+  background-image: url("../img/bg_xbtn-s.png");
+  width: 36px;
+  height: 36px;
 }
 @media screen and (max-width: 599px) {
   .fixedbnr {
-    height: 113px;
+    height: 118px;
   }
   .fixedbnr__flx {
-    padding-top: 60px;
+    padding-top: 40px;
   }
+}
+
+.fixedbnr {
+  background-image: url("../img/bg_fixbnr_0321.png");
+  width: 286px;
+  height: 154px;
+}
+.fixedbnr__flx02 {
+  width: 240px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+.fixedbnr__flx02 .main__intro--camp-app01 {
+  width: 105px;
+  height: 39px;
+}
+.fixedbnr__flx02 .main__intro--camp-app02 {
+  width: 131px;
+  height: 38.6px;
+}
+.fixedbnr__flx {
+  width: 146px;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+.fixedbnr {
+  background-image: url("../img/bg_fixbnr_0326.png");
+  width: 286px;
+  height: 154px;
+}
+.fixedbnr__flx02 {
+  width: 240px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+.fixedbnr__flx02 .main__intro--camp-app01 {
+  width: 105px;
+  height: 39px;
+}
+.fixedbnr__flx02 .main__intro--camp-app02 {
+  width: 131px;
+  height: 38.6px;
+}
+.fixedbnr__flx {
+  width: 146px;
+  margin: 0 auto;
+  padding: 10px 0 10px;
 }

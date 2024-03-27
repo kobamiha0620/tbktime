@@ -154,7 +154,7 @@ display: none;
 //0321 ----------------------------------------
 .webp{
     .header__fv{
-        background-image: url('../img/fv_pc-0321.webp');
+        background-image: url('../img/fv_pc-0321mod.webp');
         @media screen and (max-width: var.$tabw) {
             background-image: url('../img/bg_fv-tb-big0321.webp');
 
@@ -172,7 +172,7 @@ display: none;
 }
 .no-webp{
     .header__fv{
-        background-image: url('../img/fv_pc-0311.jpg');
+        background-image: url('../img/fv_pc-0321mod.jpg');
         @media screen and (max-width: var.$tabw) {
             background-image: url('../img/bg_fv-tb-big0321.jpg');
 
@@ -183,6 +183,43 @@ display: none;
         }
         @media screen and (max-width: var.$spbp) {
             background-image: url('../img/fv_sp0321.jpg') no-repeat;
+            
+        }
+
+    }
+}
+//0326 ----------------------------------------
+.webp{
+    .header__fv{
+        background-image: url('../img/fv_pc-0326.webp');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/bg_fv-tb-big0326.webp');
+
+        }
+        @media screen and (max-width: 800px) {
+            background-image: url('../img/bg_fv-tb0326.webp');
+
+        }
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/fv_sp0326.webp');
+
+        }
+
+    }
+}
+.no-webp{
+    .header__fv{
+        background-image: url('../img/fv_pc-0326.jpg');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/bg_fv-tb-big0326.jpg');
+
+        }
+        @media screen and (max-width: 800px) {
+            background-image: url('../img/bg_fv-tb0326.jpg');
+ 
+        }
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/fv_sp0326.jpg') no-repeat;
             
         }
 

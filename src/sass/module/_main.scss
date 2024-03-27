@@ -1039,3 +1039,68 @@
         }
     }
 }
+
+//0325
+.main__campagin--bnr6{
+    display: block;
+}
+.main__campagin--bnr5{
+    margin-bottom: 20px;
+    @media screen and (max-width: var.$tabw) {
+        margin-bottom: 3vw;
+    }
+
+}
+.main__campagin--bnr6{
+    margin-bottom: 20px;
+    @media screen and (max-width: var.$tabw) {
+        margin-bottom: 3vw;
+    }
+}
+.main__campagin{
+    background-size: cover;
+}
+
+//0326
+.main__intro{
+
+    &--camp{
+        background-image: url('../img/bg_camp0326.png');
+        &-app{
+            width: 616px;
+            padding-top: 96px;
+        }
+        &-app01{
+            background-image: url('../img/btn_apporigin.png');
+            width: 264px;
+            height: 97px;
+        }
+        &-app02{
+            width: 328px;
+            height: 97px;
+        }
+        @media screen and (max-width: var.$tabw) {
+            &-box{
+                padding-top: 10vw;
+            }
+            &-app{
+                width: 100%;
+                padding: 0 7vw;
+                padding-top: 10vw;
+            }
+            &-app01{
+                width: 27.2vw;
+                height: 10vw;
+                background-size: cover;
+            }
+            &-app02{
+                width: 34vw;
+                height: 10vw;
+
+            }
+        }
+
+    }
+}
+
+                   
