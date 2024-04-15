@@ -1,0 +1,126 @@
+ <%
+// 以下の設定値を記入のこと
+var pageinit = {
+ttl : 'たべっ子どうぶつTime コラボキャンペーン' ,
+keywords : '' ,
+description : 'たべっ子どうぶつTime 主題歌オーディション始動！秋元康総合プロデュース キッズ音楽ユニット 今秋メジャーデビュー' ,
+ogurl : 'https://tabekkotime.jp/campaign/' ,
+path: '',
+ogimage : '' ,
+path : '' ,
+category : ['campaign'] ,
+pagename : '',
+css: [],
+js:[]
+};
+%>
+
+ <!DOCTYPE html>
+ <html lang="ja">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="canonical" href="<%= pageinit.ogurl %>">
+
+     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+
+     <meta name="description" content="<%= pageinit.description %>" />
+     <meta property="og:url" content="<%= pageinit.ogurl %>" />
+     <meta property="og:type" content="website" />
+     <meta property="og:title" content="<%= pageinit.ttl %>" />
+     <meta property="og:description" content="<%= pageinit.description %>" />
+     <meta property="og:site_name" content="<%= pageinit.ttl %>" />
+     <meta property="og:image" content="https://tabekkotime.jp/assets/img/camp/ogp.png" />
+
+     <!-- favicon -->
+     <link rel="icon" href="https://tabekkotime.jp/assets/img/favicon.ico" sizes="any">
+
+
+     <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet"><!-- Google Font -->
+
+     <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+     <link rel="stylesheet" href="../assets/css/campaign.css">
+
+     <title><%= pageinit.ttl %></title>
+
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2VTQ712ZR"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+
+         function gtag() {
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+
+         gtag('config', 'G-Y2VTQ712ZR');
+     </script>
+
+     <!-- Google Tag Manager -->
+     <script>
+         (function (w, d, s, l, i) {
+             w[l] = w[l] || [];
+             w[l].push({
+                 'gtm.start': new Date().getTime(),
+                 event: 'gtm.js'
+             });
+             var f = d.getElementsByTagName(s)[0],
+                 j = d.createElement(s),
+                 dl = l != 'dataLayer' ? '&l=' + l : '';
+             j.async = true;
+             j.src =
+                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+             f.parentNode.insertBefore(j, f);
+         })(window, document, 'script', 'dataLayer', 'GTM-NCRCCCFX');
+     </script>
+     <!-- End Google Tag Manager -->
+ </head>
+
+
+ <body class="campaign">
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRCCCFX" height="0" width="0"
+             style="display:none;visibility:hidden"></iframe></noscript>
+     <!-- End Google Tag Manager (noscript) -->
+
+    <header id="policyhead">
+
+    </header>
+
+
+    <main class="policymain">
+        <div class="policymain__inner">
+            <h1 class="policymain__subttl"><a href="/campaign/">応募規約・ご注意事項</a></h1>
+
+            <%- include('./presentterm_contain'); -%>
+    
+        </div>
+    
+        <div class="policymain__box">
+            <p class="policymain__top"><a href="#policyhead">TOPへもどる</a></p>
+            <p class="policymain__top"><a href="/campaign/">HOME</a></p>
+        </div>
+    </main>
+
+
+
+     <div class="cmain__intro">
+        <%- include('../module/cfooter'); -%>
+
+    </div>
+
+
+     <script src="../assets/js/modernizr-custom.js"></script>
+     <script src="../assets/js/common.js"></script>
+
+ </body>
+
+ </html>

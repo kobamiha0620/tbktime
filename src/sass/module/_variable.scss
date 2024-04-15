@@ -11,6 +11,8 @@ $bg_dark: #32667A;
 $bg2: #d8d8e4;
 $imgpath: '/assets/img/';
 $maxW: 800px;
+$pcwidth: 904px;
+
 @mixin bg(){
     background-size: 100% auto;
     white-space: nowrap;

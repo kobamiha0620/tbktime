@@ -1,24 +1,29 @@
 @use "./module/variable"as var;
 
-.policymain{
-    li{
-        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+.policymain {
+    li {
+        font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
     }
-    p, h2{
-        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+
+    p,
+    h2 {
+        font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
     }
 }
-.policy{
 
-    &__underline{
+.policy {
+
+    &__underline {
         text-decoration: underline;
     }
-    &__txt{
+
+    &__txt {
         @include var.fz(15);
         line-height: 1.8;
         color: #444;
         margin: 0 0 1.8em;
-        &-b{
+
+        &-b {
             @include var.fz(15);
             line-height: 1.8;
             color: #444;
@@ -26,26 +31,41 @@
             text-indent: -1em;
             padding-left: 1em;
         }
-        &.centre{
+
+        &.centre {
             text-align: center;
         }
+        span{
+            text-indent: -1em;
+            padding-left: 1em;
+            @include var.fz(13);
+            display: block;
+            margin-bottom: .5em;
+        }
+        small{
+            @include var.fz(13);
+
+        }
     }
-    &__box{
+
+    &__box {
         counter-reset: item;
         padding-left: 1em;
         margin-left: 1em;
         margin-top: 1em;
 
-        li{
+        li {
             position: relative;
             line-height: 1.8;
             @include var.fz(15);
             color: #444;
             margin-bottom: 2em;
-            a{
+
+            a {
                 word-break: break-all;
             }
-            &::before{
+
+            &::before {
                 counter-increment: item;
                 content: counter(item) ".";
                 line-height: 1.8;
@@ -57,20 +77,23 @@
             }
         }
     }
-    &__alp{
+
+    &__alp {
         counter-reset: num;
         padding-left: 1em;
         margin-left: 0.6em;
         margin-top: 1em;
         margin-bottom: 2em;
-        li{
+
+        li {
             @include var.fz(15);
             line-height: 1.8;
             color: #444;
             margin-bottom: 1em;
-            &::before{
+
+            &::before {
                 counter-increment: num;
-                content: "(" counter(num, lower-alpha) ")";
+                content: "("counter(num, lower-alpha) ")";
                 @include var.fz(15);
                 line-height: 1.8;
                 color: #444;
@@ -79,20 +102,22 @@
             }
         }
     }
-    &__greek{
+
+    &__greek {
         counter-reset: greek;
         padding-left: 1em;
         margin-left: 0.6em;
         margin-top: 1em;
 
-        li{
+        li {
             @include var.fz(15);
             line-height: 1.8;
             color: #444;
             margin-bottom: 1em;
-            &::before{
+
+            &::before {
                 counter-increment: greek;
-                content: "(" counter(greek, lower-roman) ")";
+                content: "("counter(greek, lower-roman) ")";
                 @include var.fz(15);
                 line-height: 1.8;
                 color: #444;
@@ -102,11 +127,13 @@
             }
         }
     }
-    &__ttl{
+
+    &__ttl {
         margin-top: 3em;
         margin-bottom: 2em;
     }
-    &__note{
+
+    &__note {
         @include var.fz(15);
         line-height: 1.8;
         color: #444;
@@ -114,47 +141,54 @@
         padding-left: 0.5em;
         margin-bottom: 1.8em;
     }
+
     @media screen and (max-width: var.$spbp) {
-        &__txt{
+        &__txt {
             @include var.fz(11);
             line-height: 1.4;
             margin: 0 0 1.4em;
-            &-b{
+
+            &-b {
                 @include var.fz(11);
                 line-height: 1.4;
             }
         }
-        &__box{
+
+        &__box {
             margin-top: 1em;
-            li{
+
+            li {
                 @include var.fz(11);
                 line-height: 1.4;
                 color: #444;
                 margin-bottom: 2em;
 
-                &::before{
+                &::before {
                     counter-increment: item;
                     content: counter(item) ".";
                     @include var.fz(11);
                     line-height: 1.4;
                     color: #444;
-    
+
                     position: absolute;
                     left: -1.6em;
                 }
             }
         }
-        &__alp{
+
+        &__alp {
             counter-reset: num;
             padding-left: 1em;
             margin-left: 0;
-            li{
+
+            li {
                 @include var.fz(11);
                 line-height: 1.4;
                 margin-bottom: 1em;
-                &::before{
+
+                &::before {
                     counter-increment: num;
-                    content: "(" counter(num, lower-alpha) ")";
+                    content: "("counter(num, lower-alpha) ")";
                     @include var.fz(11);
                     line-height: 1.4;
                     color: #444;
@@ -163,19 +197,21 @@
                 }
             }
         }
-        &__greek{
+
+        &__greek {
             counter-reset: greek;
             padding-left: 1em;
             margin-left: 0.6em;
             margin-top: 1em;
-    
-            li{
+
+            li {
                 @include var.fz(11);
                 line-height: 1.4;
                 margin-bottom: 1em;
-                &::before{
+
+                &::before {
                     counter-increment: greek;
-                    content: "(" counter(greek, lower-roman) ")";
+                    content: "("counter(greek, lower-roman) ")";
                     @include var.fz(11);
                     line-height: 1.4;
                     color: #444;
@@ -184,7 +220,8 @@
                 }
             }
         }
-        &__note{
+
+        &__note {
             @include var.fz(11);
             line-height: 1.4;
             color: #444;
@@ -195,98 +232,262 @@
     }
 
 }
-.policymain{
+
+.policymain {
     background: url('../img/bg_wood02.jpg') repeat-y;
     width: 100%;
     padding: 108px 0;
-    &__box{
+
+    &__box {
         display: flex;
         justify-content: center;
     }
-    &__ttl{
+
+    &__ttl {
 
         text-align: center;
-        
-        a{
+
+        a {
             @include var.bg();
             background-image: url('../img/logo_policy.png');
             background-repeat: no-repeat;
             width: 290px;
             height: 126px;
             margin: 0 auto 50px;
-        }   
+        }
     }
-    &__subttl{
+
+    &__subttl {
         text-align: center;
         font-weight: bold;
         @include var.fz(32);
         margin: 0 auto 12px;
 
-        &-en{
+        &-en {
             text-align: center;
             font-weight: bold;
             margin: 0 auto 60px;
 
-    
+
         }
     }
-    &__inner{
+
+    &__inner {
         background: #FFF;
         padding: 60px 40px;
         max-width: 960px;
         margin: 0 auto;
         border-radius: 3px;
-        box-shadow: 5px 5px 5px  rgba(0,0,0,0.4);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 
     }
-    &__top{
+
+    &__top {
         display: block;
         margin: 30px 10px;
         color: #000;
         text-align: center;
-        a{
+
+        a {
             text-decoration: underline;
         }
-        text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-        -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-        0px 1px 0 #FFF,  0-1px 0 #FFF,
-        -1px 0 0 #FFF, 1px 0 0 #FFF;
+
+        text-shadow:1px 1px 0 #FFF,
+        -1px -1px 0 #FFF,
+        -1px 1px 0 #FFF,
+        1px -1px 0 #FFF,
+        0px 1px 0 #FFF,
+        0-1px 0 #FFF,
+        -1px 0 0 #FFF,
+        1px 0 0 #FFF;
     }
+
     @media screen and (max-width: var.$spbp) {
         padding: 15vw 0;
-        &__ttl{
+
+        &__ttl {
             text-align: center;
-            a{
+
+            a {
                 @include var.bg();
                 background-image: url('../img/logo_policy.png');
                 background-repeat: no-repeat;
                 width: 40.2vw;
                 height: 17.5vw;
                 margin: 0 auto 8vw;
-            }   
+            }
         }
-        &__subttl{
+
+        &__subttl {
             @include var.fz(24);
             margin: 0 auto 0.5em;
             text-align: center;
-
-
-        &-en{
-
-            margin: 0 auto 10vw;
-
-    
-        
+            &-en {
+                margin: 0 auto 10vw;
+            }
         }
-    }
-        &__inner{
+
+        &__inner {
             background: #FFF;
             padding: 10vw 5vw;
             max-width: 100%;
-            width: 90%;    
+            width: 90%;
         }
-        &__top{
 
-        }
+        &__top {}
     }
 }
+
+//追記　キャンペーン
+.policymain{
+    &__subttl{
+        font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
+        @include var.fz(24);
+
+        line-height: 1.4;
+        margin-bottom: 1em;
+    }
+}
+.policy {
+    &__subttl{
+        @include var.fz(15);
+        line-height: 1.8;
+        color: #444;
+    }
+    &__notice{
+        text-indent: -1em;
+        padding-left: 1em;
+        @include var.fz(13);
+        margin-bottom: .5em;
+
+    }
+    &__cambox {
+        counter-reset: item;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 1.8em;
+
+        li {
+            position: relative;
+            line-height: 1.8;
+            @include var.fz(15);
+            color: #444;
+
+            a {
+                word-break: break-all;
+            }
+
+            &::before {
+                counter-increment: item;
+                content: "("counter(item)")";
+                line-height: 1.8;
+                @include var.fz(15);
+                color: #444;
+                position: absolute;
+                left: -1.6em;
+            }
+        }
+        &--nihon{
+            counter-reset: my-counter;
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-left: 0.5em;
+            margin-bottom: 0.8em;
+    
+            li {
+                position: relative;
+                line-height: 1.8;
+                @include var.fz(15);
+                color: #444;
+    
+                a {
+                    word-break: break-all;
+                }
+    
+                &::before {
+                    content: counter(my-counter);
+                    counter-increment: my-counter;
+                    
+                    line-height: 1.8;
+                    @include var.fz(15);
+                    position: absolute;
+                    left: -1.6em;
+                    background-color: #FFF;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 15px;
+                    width: 15px;
+                    color: #444;
+                    font-size: 85%;
+                    line-height: 1;
+                    position: absolute;
+                    top: 0.45em;
+                }
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: var.$spbp) {
+        &__subttl{
+            @include var.fz(11);
+            line-height: 1.4;
+        }
+        &__notice{
+            @include var.fz(11);
+        }
+        &__txt{
+            small{
+                @include var.fz(11);
+
+            }
+            span{
+                @include var.fz(11);
+
+            }
+        }
+        &__cambox {
+            li {
+
+                @include var.fz(11);
+
+                &::before {
+
+                    @include var.fz(11);
+
+                }
+            }
+            &--nihon{
+                li {
+                    @include var.fz(11);
+                    &::before {
+
+                        @include var.fz(8);
+                        position: absolute;
+                        left: -1.6em;
+                        background-color: #FFF;
+                        border: 1px solid;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 11px;
+                        width: 11px;
+                        position: absolute;
+                        top: 0.4em;
+                    }
+                }
+            }
+        }
+    
+    }
+
+}
+

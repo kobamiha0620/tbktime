@@ -1,0 +1,147 @@
+@use "./reset";
+@use "./module/variable"as var;
+@use "./camp/*";
+@use "./module/polcy";
+
+.notice{
+    color: var.$white;
+    @include var.fz(14);
+    line-height: 1.5;
+    @media screen and (max-width: var.$spbp) {
+        @include var.fz(12);
+
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    //PC対応
+
+    //タブレット対応
+    @media screen and (max-width: var.$tabw) {
+
+    }
+    //SP対応
+    @media screen and (max-width: var.$spbp) {
+
+    }
+}
+
+.footer{
+    //PC対応
+
+    //タブレット対応
+    @media screen and (max-width: var.$tabw) {
+
+    }
+    //SP対応
+    @media screen and (max-width: var.$spbp) {
+
+    }
+}
+
+
+
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.8s, transform 1.2s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
+
+a{
+    &:hover{
+        opacity: 0.7;
+    }
+    @media screen and (max-width: var.$spbp) {
+        &:hover{
+            opacity: 1;
+        }
+    }
+    
+}
+
+
+.fixedbnr{
+    &.camp{
+        background-image: none;
+    }
+    position: fixed;
+    right: 0;
+    top: 5vw;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 298px;
+    height: 168px;
+    transition: .3s;
+    .fixbtn01{
+        @include var.bg();
+        background-image: url('../img/camp/fixbtn01.png');
+        width: 298px;
+        height: 75px;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .fixbtn02{
+        @include var.bg();
+        background-image: url('../img/camp/fixbotn02.png');
+        width: 298px;
+        height: 75px;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: var.$tabw) {
+        position: fixed;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        transition: .3s;
+        background: rgba(255,255,255, 0.4);
+        height: auto;
+        &.camp{
+            bottom: 0!important;
+        }
+        .fixbtn01{
+            width: 39.7vw;
+            height: 10vw;
+            background-size: cover;
+            margin: 0 5px;
+        }
+        .fixbtn02{
+            width: 39.7vw;
+            height: 10vw;
+            background-size: cover;
+            margin: 0 5px;
+
+        }
+    
+    }
+}
+
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.5s, transform 1s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+

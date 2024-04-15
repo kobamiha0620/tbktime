@@ -1,0 +1,108 @@
+@use "./module/variable"as var;
+.notice{
+    color: var.$white;
+    @include var.fz(14);
+    line-height: 1.5;
+    @media screen and (max-width: var.$spbp) {
+        @include var.fz(12);
+
+    }
+}
+
+.cfooter{
+    width: 100%;
+    padding: 108px 0 0;
+    &__inner{
+        margin: 0 auto;
+        max-width: var.$pcwidth;
+    }
+
+    &__notice{
+        @extend .notice;
+        text-align: center;
+        margin-top: 70px;
+    }
+    &__btmnotice{
+        @extend .notice;
+        text-align: center;
+    }
+    &__blc{
+        display: flex;
+        justify-content: center;
+    }
+    &__ginbis{
+        @include var.bg();
+        background-image: url('../img/bnr_ginbis.png');
+        width: 300px;
+        height: 60px;
+        margin: 0 10px;
+    }
+    &__time{
+        @include var.bg();
+        background-image: url('../img/camp/bnr_time.png');
+        width: 300px;
+        height: 60px;
+        margin: 0 10px;
+    }
+    &__victor{
+        @include var.bg();
+        background-image: url('../img/camp/bnr_victor.png');
+        width: 300px;
+        height: 60px;
+        margin: 20px auto 50px;
+    }
+    
+    &__links{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        li{
+            margin: 0 8px;
+            a{
+                @include var.fz(16);
+                text-decoration: underline;
+                color: #FFF;
+            }
+        }
+    }
+    @media screen and (max-width: var.$spbp) {
+        padding: 20vw 0 10vw;
+        margin: 0;
+        &__inner{
+            padding: 0;
+        }
+        &__blc{
+            display: block;
+        }
+        &__ginbis{
+            width: 260px;
+            height: 52px;
+            margin: 0 auto 10px;
+        }
+        &__time{
+            width: 260px;
+            height: 52px;
+            margin: 0 auto 10px;
+        }
+        &__victor{
+            width: 260px;
+            height: 52px;
+            margin: 10px auto 50px;
+        }
+
+        &__links{
+            margin-bottom: 10px;
+            display: block;
+            li{
+                margin: 0 10px;
+                text-align: center;
+                a{
+                    @include var.fz(12);
+                }
+            }
+        }
+        &__notice{
+            margin-top: 50px;
+        }
+    }
+}

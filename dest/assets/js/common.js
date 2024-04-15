@@ -32,3 +32,16 @@ window.addEventListener('scroll', function () {
    observer.observe(targets[i]);
   }
   
+
+
+//アコーディオン
+$(function(){
+    //.accordion_oneの中の.accordion_headerがクリックされたら
+    $('.faq__blc .faq__blc--q').click(function(){
+      //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerが開いたり閉じたりする。
+      $(this).next('.faq__blc--a').slideToggle();
+      $(this).toggleClass("open");
+    });
+
+
+  });
