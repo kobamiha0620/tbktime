@@ -1,0 +1,223 @@
+@use "./module/variable"as var;
+
+.schedule {
+  background-color: #8FEFED;
+  width: 100%;
+  padding: 120px 0;
+
+  &__ttl {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__txt {
+    @include var.fz(18);
+    line-height: 1.8;
+    font-weight: normal;
+    color: var.$gray;
+    margin: 40px 0;
+  }
+
+  &__wrap {
+    padding: 20px 20px 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+
+  }
+
+  &__blc {
+    border-bottom: 1px #707070 solid;
+    padding: 18px 10px;
+
+    &--q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    &--btn{
+      margin: 1em 0 0;
+      a{
+        border: solid 1px var.$pink;
+        background-color: #FFF;
+        border-radius: 20px;
+        @include var.fz(16);
+        color: var.$pink;
+        padding: 0.5em 1.5em;
+        line-height: 1;
+        display: inline-block;
+      }
+    }
+
+  }
+
+  &__list {
+
+    &--ttl {
+      @include var.fz(18);
+      cursor: pointer;
+      padding: 10px 0;
+      font-weight: 600;
+    }
+
+    &--txt {
+      @include var.fz(16);
+      line-height: 1.6;
+      color: var.$gray;
+      margin-bottom: 8px;
+    }
+
+    &--note {
+      @include var.fz(12);
+      line-height: 1.2;
+      color: var.$gray;
+      text-indent: -1em;
+      padding-left: 1em;
+      margin-bottom: 3px;
+    }
+    &--note02 {
+      @include var.fz(14);
+      line-height: 1.4;
+      color: var.$gray;
+      text-indent: -1em;
+      padding-left: 1em;
+      margin-bottom: 8px;
+    }
+    &--sblc {
+      &-in{
+        padding-right: 32px;
+      }
+    }
+
+    &--arrow {
+      width: 20px;
+      height: 20px;
+      margin: 0 0 0 30px;
+
+      span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/minus.svg');
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (max-width: 599px) {
+  .schedule {
+    padding: 20vw 0;
+  
+    &__ttl {
+      width: 100%;
+
+    }
+  
+    &__txt {
+      @include var.fz(15);
+      line-height: 1.4;
+      margin: 8vw 0;
+      padding: 0 1vw;
+    }
+  
+    &__wrap {
+      padding: 0 5vw 10vw;
+      border-radius: 5px;
+    }
+  
+    &__blc {
+      border-bottom: 1px #707070 solid;
+      padding: 3vw 1vw 3vw 0;
+
+      &--btn{
+        margin: 1em 0 0;
+        
+        a{
+          @include var.fz(14);
+          padding: 0.5em 1.5em;
+          display: block;
+          width:  100%;
+          text-align: center;
+        }
+      }
+  
+    }
+  
+    &__list {
+  
+      &--ttl {
+        @include var.fz(16);
+        padding: 8px 0;
+      }
+  
+      &--txt {
+        @include var.fz(14);
+        line-height: 1.4;
+        margin-bottom: 8px;
+      }
+  
+      &--note {
+        @include var.fz(11);
+
+        margin-bottom: 3px;
+      }
+      &--note02 {
+        @include var.fz(12);
+        margin-bottom: 6px;
+      }
+      &--sblc {
+        &-in{
+          padding-right: 0;
+        }
+      }
+  
+      &--arrow {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 30px;
+
+        span {
+          width: 20px;
+          height: 20px;
+       }
+      }
+    }
+  
+    .inner {
+      width: 100%;
+      padding: 0 5vw;
+      margin: 0 auto;
+    }
+  
+  }
+}
+
+.schedule__blc--q {
+  &.open {
+    .schedule__list--arrow {
+      span {
+        background-image: url('../img/plus.svg');
+
+      }
+
+
+    }
+    &+.schedule__list--sblc{
+      display: none;
+    }
+  }
+
+
+}

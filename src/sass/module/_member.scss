@@ -1,0 +1,232 @@
+@use "./module/variable"as var;
+
+.member {
+  background-color: #F6DEF0;
+  width: 100%;
+  padding: 120px 0;
+
+  &__ttl {
+    @include var.bg();
+    background-image: url('../img/ttl_member.png');
+    width: 794px;
+    height: 138px;
+    margin: 0 auto;
+  }
+
+  &__blc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -30px;
+
+    li {
+      max-width: 30.6%;
+      margin-bottom: 50px;
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 2px #FFF solid;
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    color: var.$pink;
+    @include var.fz(18);
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  &__intro {
+    text-align: center;
+    color: var.$gray;
+    @include var.fz(14);
+    line-height: 1.5;
+  }
+
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+}
+
+.member__sns {
+  position: relative;
+  padding-bottom: 10px;
+  width: 290px;
+  margin: 100px auto 0;
+
+  &--ttl {
+    text-align: center;
+    color: var.$pink;
+    @include var.fz(30);
+    font-weight: 600;
+    background-color: #FFF;
+    padding: 8px;
+    border-radius: 30px;
+    line-height: 1;
+    width: 290px;
+    margin: 0 auto 35px;
+  }
+
+  &--blc {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    li {
+      min-width: 35px;
+
+      a {
+        width: 35px;
+        height: 35px
+      }
+    }
+  }
+
+  &--kaba {
+    position: absolute;
+    width: 94px;
+    right: -107px;
+    bottom: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &--saru {
+    position: absolute;
+    width: 83px;
+    left: -98px;
+    bottom: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &--tiktok {
+    @include var.bg();
+    background-image: url('../img/tiktok.svg');
+
+  }
+
+  &--x {
+    @include var.bg();
+    background-image: url('../img/x_pink.svg');
+
+  }
+
+  &--insta {
+    @include var.bg();
+    background-image: url('../img/insta_pink.svg');
+
+  }
+
+  &--youtube {
+    @include var.bg();
+    background-image: url('../img/youtube.svg');
+
+  }
+
+  &--fb {
+    @include var.bg();
+    background-image: url('../img/facebook.svg');
+
+  }
+}
+
+@media screen and (max-width: var.$tabw) {
+  .member {
+    padding: 10vw 5%;
+
+    &__ttl {
+      width: 90vw;
+      height: 17vw;
+    }
+
+    &__blc {
+
+      margin-top: -5vw;
+
+      li {
+        max-width: 48%;
+
+      }
+    }
+
+    &__name {
+
+      @include var.fz(16);
+      margin: 10px 0;
+    }
+
+    &__intro {
+
+      @include var.fz(13);
+    }
+
+    .inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 599px) {
+
+.member__sns {
+  padding-bottom: 10px;
+  width: 60vw;
+  max-width: 280px;
+  margin: 10vw auto 0;
+  &--ttl {
+    @include var.fz(20);
+    background-color: #FFF;
+    padding: 8px;
+    border-radius: 30px;
+    line-height: 1;
+    width: 60vw;
+    max-width: 280px;
+
+    margin: 0 auto 35px;
+  }
+
+  &--blc {
+    width: 60vw;
+    max-width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    li {
+      min-width: 35px;
+
+      a {
+        width: 35px;
+        height: 35px
+      }
+    }
+  }
+
+  &--kaba {
+display: none;
+
+  }
+
+  &--saru {
+display: none;
+  }
+
+}
+}

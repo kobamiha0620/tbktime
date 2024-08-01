@@ -225,3 +225,42 @@ display: none;
 
     }
 }
+
+
+//0802 ----------------------------------------
+.webp{
+    .header__fv{
+        background-image: url('../img/fvpc_240802.webp');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/fv_tb240802_big.webp');
+
+        }
+        @media screen and (max-width: 800px) {
+            background-image: url('../img/fv_tb240802.webp');
+
+        }
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/fv_sp0802.webp');
+
+        }
+
+    }
+}
+.no-webp{
+    .header__fv{
+        background-image: url('../img/fvpc_240802.jpg');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/fv_tb240802_big.jpg');
+
+        }
+        @media screen and (max-width: 800px) {
+            background-image: url('../img/fv_tb240802.jpg');
+ 
+        }
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/fv_sp0802.jpg') no-repeat;
+            
+        }
+
+    }
+}

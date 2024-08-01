@@ -1,0 +1,390 @@
+@use "./module/variable"as var;
+
+
+.topIntro{
+  padding-top: 140px;
+  background-image: url('../img/bg_wood01b.jpg');
+
+  &__img{
+    max-width: 1080px;
+    margin: 0 auto;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__feature{
+    background-image: url('../img/bg_obi.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 140px;
+    margin-top: -80px;
+    position: relative;
+
+    &--ttl{
+      position: absolute;
+      bottom: 0;
+      width: 80vw;
+      max-width: 1080px;
+      left: 50%;
+      transform: translateX(-50%);
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+    @media screen and (max-width: 1025px) {
+      padding-top: 16vw;
+      &__img{
+        max-width: 1080px;
+        padding: 0 5vw;
+        margin: 0 auto;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__feature{
+        width: 100%;
+        height: 13vw;
+        margin-top: -7vw;
+    
+        &--ttl{
+          position: absolute;
+          bottom: 0;
+          width: 80vw;
+          max-width: 1080px;
+          left: 50%;
+          transform: translateX(-50%);
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    
+    }
+}
+
+.logoheader{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 16px 0;
+  display: block;
+  &__logo{
+    @include var.bg();
+    background-image: url('../img/logo_fixheader.png');
+    background-repeat: no-repeat;
+    width: 427px;
+    height: 80px;
+    margin: 0 auto;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    padding: 10px 0;
+    &__logo{
+      width: 50vw;
+      height: 9.2vw;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.introrelease {
+  background-image: url('../img/bg_wood01b.jpg');
+  width: 100%;
+  padding: 120px 0;
+  &__blc{
+    background-color: #F6DEF0;
+    border-radius: 8px;
+    padding: 40px;
+
+  }
+  &__ttl {
+    @include var.fz(22);
+    color: var.$pink;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 0 auto 34px;
+  }
+
+  &__txt{
+    @include var.fz(16);
+    color: var.$gray;
+    line-height: 1.8;
+    span{
+      color: var.$pink;
+      font-weight: bold;
+    }
+  }
+  &__sblc{
+    margin: 30px 0 0;
+    background-color: #FFF;
+    border: solid 2px var.$pink;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    &--txt{
+      @include var.fz(14);
+      line-height: 1.6;
+      color: #444;
+    }
+    &--neko{
+      position: absolute;
+      width: 83px;
+      right: -38px;
+      bottom: -42px;
+      img{
+        width: 100%;
+        height: auto
+      }
+    }
+  }
+  &__txt02{
+    @include var.fz(16);
+    color: var.$gray;
+    line-height: 1.6;
+    margin-top: 20px;
+
+  }
+  &__link{
+    border: solid 2px var.$pink;
+    border-radius: 30px;
+    color: var.$pink;
+    text-align: center;
+    display: block;
+    padding: 6px 0;
+    margin-top: 20px;
+  }
+
+  &__note{
+    @include var.fz(12);
+    line-height: 1.4;
+    text-indent: -1em;
+    padding-left: 1em;
+    margin-top: 5px;
+  }
+  &__origin{
+    margin: 0 auto 45px;
+    &--ttl{
+      @include var.fz(24);
+      text-align: center;
+      color: var.$gray;
+      background-color:#FFE86C;
+      border-radius: 20px;
+      margin: 0 auto 28px;
+      padding: 10px 0;
+    }
+    &--blc{
+      display: flex;
+
+    }
+    &--img{
+      min-width: 225px;
+      margin-right: 20px;
+      img{
+        width: 100%;
+        height: auto;
+        border: solid 1px #cccccc;
+
+      }
+    }
+    &--txtblc{
+
+    }
+  }
+  &__special{
+    margin: 0 auto;
+    &--ttl{
+      @include var.fz(24);
+      text-align: center;
+      color: var.$pink;
+      background-color:#F6DEF0;
+      border-radius: 40px;
+      margin: 0 auto 28px;
+      padding: 10px 0;
+      span{
+        font-size: 0.6em;
+      }
+    }
+    &--blc{
+      display: flex;
+
+    }
+    &--img{
+      min-width: 310px;
+      margin-right: 20px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    &--txtblc{
+
+    }
+  }
+  &__wani{
+    position: absolute;
+    width: 136px;
+    right: 20px;
+    bottom: -30px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (max-width: 1025px) {
+
+  .introrelease {
+    width: 100%;
+    padding: 10vw 0 20vw;
+    &__blc{
+
+      padding: 6vw;
+  
+    }
+    &__ttl {
+      @include var.fz(16);
+      margin: 0 auto 6vw;
+    }
+  
+    &__txt{
+      @include var.fz(15);
+      line-height: 1.8;
+    }
+    &__sblc{
+      margin: 5vw 0 0;
+      padding: 5vw;
+      border-radius: 5px;
+      &--txt{
+        @include var.fz(14);
+      }
+      &--neko{
+        position: absolute;
+        width: 20vw;
+        right: -10vw;
+        bottom: -10vw;
+
+      }
+    }
+    &__txt02{
+      @include var.fz(16);
+      color: var.$gray;
+      line-height: 1.6;
+      margin-top: 20px;
+  
+    }
+    &__link{
+      border: solid 2px var.$pink;
+      border-radius: 30px;
+      color: var.$pink;
+      text-align: center;
+      display: block;
+      padding: 6px 0;
+      margin-top: 20px;
+    }
+  
+    &__note{
+      @include var.fz(12);
+      line-height: 1.4;
+      text-indent: -1em;
+      padding-left: 1em;
+      margin-top: 5px;
+    }
+    &__origin{
+      margin: 0 auto 45px;
+      &--ttl{
+        @include var.fz(24);
+        text-align: center;
+        color: var.$gray;
+        background-color:#FFE86C;
+        border-radius: 20px;
+        margin: 0 auto 28px;
+        padding: 10px 0;
+      }
+      &--blc{
+        display: flex;
+  
+      }
+      &--img{
+        min-width: 225px;
+        margin-right: 20px;
+        img{
+          width: 100%;
+          height: auto;
+          border: solid 1px #cccccc;
+  
+        }
+      }
+      &--txtblc{
+  
+      }
+    }
+    &__special{
+      margin: 0 auto;
+      &--ttl{
+        @include var.fz(24);
+        text-align: center;
+        color: var.$pink;
+        background-color:#F6DEF0;
+        border-radius: 40px;
+        margin: 0 auto 28px;
+        padding: 10px 0;
+        span{
+          font-size: 0.6em;
+        }
+      }
+      &--blc{
+        display: flex;
+  
+      }
+      &--img{
+        min-width: 310px;
+        margin-right: 20px;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      &--txtblc{
+  
+      }
+    }
+    &__wani{
+      position: absolute;
+      width: 136px;
+      right: 20px;
+      bottom: -30px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .inner {
+      max-width: 100%;
+      padding: 0 5vw;
+      margin: 0 auto;
+    }
+  
+  }
+  
+  
+}
+

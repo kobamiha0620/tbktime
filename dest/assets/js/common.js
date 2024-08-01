@@ -44,4 +44,10 @@ $(function(){
     });
 
 
+    $('.schedule .schedule__blc--q').click(function(){
+      //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerが開いたり閉じたりする。
+      $(this).next('.schedule__list--sblc').slideToggle();
+      $(this).toggleClass("open");
+    });
+
   });

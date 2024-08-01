@@ -451,3 +451,33 @@ body{
 
 
 }
+
+//追記
+.webp{
+    .campHeader__fv{
+        background-image: url('../img/camp/pcfv-close.webp');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/camp/tbbg-close.webp');
+
+        }
+
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/camp/spbg-close.webp');
+
+        }
+    }
+}
+.no-webp{
+    .campHeader__fv{
+        background-image: url('../img/camp/pcfv-close.jpg');
+        @media screen and (max-width: var.$tabw) {
+            background-image: url('../img/camp/tbbg-close.jpg');
+
+        }
+
+        @media screen and (max-width: var.$spbp) {
+            background-image: url('../img/camp/spbg-close.jpg') no-repeat;
+            
+        }
+    }
+}

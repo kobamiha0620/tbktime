@@ -44,7 +44,7 @@ js:[]
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><!-- Google Font -->
 
 <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-<link rel="stylesheet" href="./assets/css/style0415.css">
+<link rel="stylesheet" href="./assets/css/style0802.css">
 
 <title><%= pageinit.ttl %></title>
 
@@ -73,19 +73,22 @@ js:[]
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRCCCFX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
-<header class="header">
-  <h1 class="header__fv">「たべっ子どうぶつ」初のアプリゲーム たべっ子どうぶつTime 2024.3 Coming Soon
-    <!-- <h1 class="header__fv img0318">「たべっ子どうぶつ」初のアプリゲーム たべっ子どうぶつTime 2024.3 Coming Soon -->
-      <!-- <p class="header__comsoon">COMING SOON</p> -->
 
+  <%- include('module/introrelease'); -%>
+  <%- include('module/jacket'); -%>
+  <%- include('module/member'); -%>
+  <%- include('module/schedule'); -%>
+  <%- include('module/event'); -%>
+
+<header class="header" id="headerFv">
+  <h1 class="header__fv">「たべっ子どうぶつ」初のアプリゲーム たべっ子どうぶつTime 2024.3 Coming Soon
   </h1>
 </header>
 
   <%- include('module/main'); -%>
   <%- include('module/footer'); -%>
 
-
+<!-- 
   <div class="fixedbnr">
     <div class="fixedbnr__flx02">
       <a href="https://itunes.apple.com/jp/app/id6476189804" target="_blank" rel="noopener noreferrer" class="main__intro--camp-app01"></a>
@@ -98,7 +101,7 @@ js:[]
       <a href="https://lin.ee/3lnXiUE" target="_blank" rel="noopener noreferrer" class="fixedbnr__flx--line">たべっ子どうぶつTime LINE</a>
     </div>
 
-  </div>
+  </div> -->
 
   <script src="./assets/js/modernizr-custom.js"></script>
   <script src="./assets/js/common.js"></script>
