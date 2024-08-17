@@ -50,4 +50,10 @@ $(function(){
       $(this).toggleClass("open");
     });
 
+
+    $('.event__date--wrapper').click(function(){
+      $(this).next('.event__details').slideToggle();
+
+    });
+
   });

@@ -1,10 +1,58 @@
 @use "./module/variable"as var;
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
 .event {
   background-color: #F9FF6C;
   width: 100%;
   padding: 120px 0;
+  &__details{
+    display: none;
+    padding: 1px 20px 20px;
+    background-color: #FFE9FF;
+    border-radius: 20px;
+    margin-top: 20px;
+    &--ttl{
+      @include var.fz(18);
+      font-weight: bold;
+      line-height: 1.3;
+      margin: 40px 0 10px;
+      &::before{
+        content: "【";
+      }
+      &::after{
+        content: "】";
+      }
+    }
+    &--subttl{
+      @include var.fz(15);
+      font-weight: bold;
+      line-height: 1.5;
+      margin: 30px 0 4px;
 
+      &::before{
+        content: "＜";
+      }
+      &::after{
+        content: "＞";
+      }
+    }
+    &--txt{
+      @include var.fz(14);
+      color: #444;
+      line-height: 1.5;
+       margin: 0 0 8px;
+    }
+    &--blc{
+      margin: 30px 0 20px;
+
+    }
+    &--note{
+      color: #706e6e;
+      line-height: 1.4;
+      @include var.fz(14);
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+  }
   &__ttl {
     @include var.bg();
     background-image: url('../img/ttl_event.png');
@@ -42,10 +90,15 @@
 
   &__list {
     li{
-      border-bottom: solid 1px #707070;
-      padding: 10px;
-      display: flex;
+      border-bottom: solid 1px #ccc;
+      padding: 20px 10px;
       align-items: center;
+      &:first-child{
+        border-top: solid 1px #ccc;
+
+      }
+    }
+    &--btn{
     }
     &--date {
       @include var.fz(18);
@@ -53,13 +106,28 @@
       text-align: right;  
       line-height: 1.5;
       min-width: 140px;
-    }
 
+    }
+    &--type{
+      @include var.fz(20);
+      color: #898989;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      margin-bottom: 4px;
+      span{
+        color: #000;
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 0.9em;
+      }
+    }
     &--txt {
       @include var.fz(16);
       line-height: 2;
       color: var.$gray;
       margin-bottom: 8px;
+
+
     }
     &--area{
       display: inline-block;
@@ -68,15 +136,40 @@
       border-radius: 20px;
       line-height: 1;
       @include var.fz(16);
-      margin: 0 10px 0 20px;
+      margin: 0 10px 0 0;
+      white-space: nowrap;
+      min-width: 52px;
     }
     &--areain{
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+    }
+    &--arrow{
+      display: flex;
+      align-items: cente;
+      background-color: #FFE9FF;
+      border-radius: 30px;
+      margin: 10px 0 0;
+      justify-content: center;
+      .arrow{
+        display: inline-block;
+        background-image: url('../img/arrow_details.png');
+        background-size: 100% auto;
+        width: 15px;
+        height: 15px;
+        margin-left: 8px;
+      }
     }
     &--basyo{
       @include var.fz(18);
-      line-height: 2;
+      line-height: 1.5;
+      
+      &span{
+        display: block;
+        padding: 8px;
+        border-radius: 20px;
+      }
+
     }
     &--note {
       @include var.fz(12);
@@ -89,6 +182,46 @@
 
 
 
+  }
+  &__date{
+    position: relative;
+    margin-right: 20px;
+    min-width: 120px;
+    width: 120px;
+    height: 60px;
+    background-image: url('../img/bg_slush.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left 8px top 0;
+    span{
+      position: absolute;
+      font-family: "Montserrat", sans-serif;  
+      font-weight: bold;
+      display: inline-block;
+      line-height: 1;
+    }
+    &--wrapper{
+      display: flex;
+      cursor: pointer;
+
+    }
+    &--mon{
+      @include var.fz(25);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &--day{
+      @include var.fz(40);
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+    &--week{
+      @include var.fz(15);
+      bottom: 5px;
+      right: 0;
+    }
   }
   &__coming{
     background-color: #F6DEF0;
@@ -114,6 +247,32 @@
   .event {
     width: 100%;
     padding: 20vw 0;
+    &__details{
+      display: none;
+      padding: 1px 5vw 5vw;
+      border-radius: 10px;
+      margin: 8px -10px 0;
+      &--ttl{
+        @include var.fz(16);
+        line-height: 1.3;
+        margin: 20px 0 10px;
+      }
+      &--subttl{
+        @include var.fz(14);
+        margin: 15px 0 4px;
+      }
+      &--txt{
+        @include var.fz(12);
+         margin: 0 0 4px;
+      }
+      &--blc{
+        margin: 20px 0 10px;
+      }
+      &--note{
+        @include var.fz(12);
+      }
+
+    }
     &__ttl {
       @include var.bg();
       width: 80vw;
@@ -138,11 +297,20 @@
       }
     }
   
-  
     &__list {
       li{
-        padding: 10px;
+        padding: 20px 10px 16px;
         display: block;
+      }
+      &--arrow{
+        @include var.fz(10);
+        margin: 6px 0 0;
+        justify-content: center;
+        .arrow{
+          width: 11px;
+          height: 11px;
+          margin-left: 3px;
+        }
       }
       &--date {
         @include var.fz(16);
@@ -153,31 +321,29 @@
         padding-left: 4px;
 
       }
-  
+      &--type{
+        @include var.fz(16);
+      }
       &--txt {
         @include var.fz(16);
         line-height: 1.2;
         margin-bottom: 8px;
       }
       &--area{
-        display: inline-block;
-
-        @include var.fz(14);
+        white-space: nowrap;
+        @include var.fz(11);
         margin: 0;
-    
+        min-width: auto;
+        padding: 2px 8px;
       }
       &--areain{
         display: flex;
-        align-items: center;
       }
       &--basyo{
-        @include var.fz(16);
-        line-height: 1;
-        padding: 3px 0 3px 10px;
+        @include var.fz(10);
+        line-height: 1.5;
+        padding: 0 0 3px 5px;
       }
-
-  
-  
   
     }
     &__coming{
@@ -192,6 +358,36 @@
         font-weight: bold;
       }
     }
+    &__date{
+      position: relative;
+      margin-right: 10px;
+      min-width: 66px;
+      width: 66px;
+      height: 36px;
+      background-position: left 6px top 0;
+
+      &--wrapper{
+        display: flex;
+        cursor: pointer;
+      }
+      &--mon{
+        @include var.fz(18);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &--day{
+        @include var.fz(20);
+        position: absolute;
+        bottom: 0;
+        left: 18px;
+      }
+      &--week{
+        @include var.fz(10);
+        bottom: 0;
+        right: 0;
+      }
+    }
     .inner {
       width: 100%;
       padding: 0 5vw;
@@ -201,4 +397,5 @@
   }
   
 }
+
 
