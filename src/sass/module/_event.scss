@@ -145,12 +145,17 @@
       align-items: flex-start;
     }
     &--arrow{
-      display: flex;
-      align-items: cente;
-      background-color: #FFE9FF;
-      border-radius: 30px;
-      margin: 10px 0 0;
-      justify-content: center;
+      display: inline-block;
+
+      p{
+        display: flex;
+        align-items: cente;
+        background-color: #FFE9FF;
+        border-radius: 30px;
+        margin: 10px 0 0;
+        justify-content: center;
+        padding: 0 20px;
+      }
       .arrow{
         display: inline-block;
         background-image: url('../img/arrow_details.png');
@@ -192,7 +197,7 @@
     background-image: url('../img/bg_slush.png');
     background-repeat: no-repeat;
     background-size: auto 100%;
-    background-position: left 8px top 0;
+    background-position: left 12px top 0;
     span{
       position: absolute;
       font-family: "Montserrat", sans-serif;  
@@ -282,7 +287,7 @@
   
     &__btn {
       display: block;
-      margin: -10vw auto 8vw;
+      margin: -10vw auto 3vw;
 
     }
   
@@ -304,7 +309,7 @@
       }
       &--arrow{
         @include var.fz(10);
-        margin: 6px 0 0;
+        margin: -6px 0 0;
         justify-content: center;
         .arrow{
           width: 11px;
@@ -364,7 +369,7 @@
       min-width: 66px;
       width: 66px;
       height: 36px;
-      background-position: left 6px top 0;
+      background-position: left 10px top 0;
 
       &--wrapper{
         display: flex;
@@ -384,8 +389,10 @@
       }
       &--week{
         @include var.fz(10);
-        bottom: 0;
-        right: 0;
+        bottom: 1px;
+        transform : scaleX(0.9);
+
+        right: -2px;
       }
     }
     .inner {

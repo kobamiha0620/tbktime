@@ -571,12 +571,16 @@ th {
   align-items: flex-start;
 }
 .event__list--arrow {
+  display: inline-block;
+}
+.event__list--arrow p {
   display: flex;
   align-items: cente;
   background-color: #FFE9FF;
   border-radius: 30px;
   margin: 10px 0 0;
   justify-content: center;
+  padding: 0 20px;
 }
 .event__list--arrow .arrow {
   display: inline-block;
@@ -612,7 +616,7 @@ th {
   background-image: url("../img/bg_slush.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: left 8px top 0;
+  background-position: left 12px top 0;
 }
 .event__date span {
   position: absolute;
@@ -702,7 +706,7 @@ th {
   }
   .event__btn {
     display: block;
-    margin: -10vw auto 8vw;
+    margin: -10vw auto 3vw;
   }
   .event__blc {
     padding: 8vw 5vw 5vw;
@@ -719,7 +723,7 @@ th {
   }
   .event__list--arrow {
     font-size: 0.625rem;
-    margin: 6px 0 0;
+    margin: -6px 0 0;
     justify-content: center;
   }
   .event__list--arrow .arrow {
@@ -776,7 +780,7 @@ th {
     min-width: 66px;
     width: 66px;
     height: 36px;
-    background-position: left 6px top 0;
+    background-position: left 10px top 0;
   }
   .event__date--wrapper {
     display: flex;
@@ -796,8 +800,9 @@ th {
   }
   .event__date--week {
     font-size: 0.625rem;
-    bottom: 0;
-    right: 0;
+    bottom: 1px;
+    transform: scaleX(0.9);
+    right: -2px;
   }
   .event .inner {
     width: 100%;
