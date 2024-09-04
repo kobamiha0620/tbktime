@@ -2,7 +2,7 @@
 
 
 .topIntro{
-  padding-top: 140px;
+  padding-top: 100px;
   background-image: url('../img/bg_wood01b.jpg');
 
   &__img{
@@ -14,10 +14,10 @@
     }
   }
   &__feature{
-    background-image: url('../img/bg_obi.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 140px;
+    background-image: url('../img/bg_youtube.jpg');
+    background-size: 3800px 2000px;
+        width: 100%;
+    height: 150px;
     margin-top: -80px;
     position: relative;
 
@@ -35,7 +35,7 @@
     }
   }
     @media screen and (max-width: 1025px) {
-      padding-top: 16vw;
+      padding-top: 8vw;
       &__img{
         max-width: 1080px;
         padding: 0 5vw;
@@ -49,7 +49,7 @@
         width: 100%;
         height: 13vw;
         margin-top: -7vw;
-    
+        background-size: 1900px 1000px;
         &--ttl{
           position: absolute;
           bottom: 0;
@@ -388,3 +388,34 @@
   
 }
 
+
+
+.youtube{
+  width: 100%;
+  padding: 140px 0 100px;
+  background-image: url('../img/bg_youtube.jpg');
+background-size: 3800px 2000px;
+background-position: center center;
+  &__inner{
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  &__img{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    iframe{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    padding: 16vw 5vw 6vw;
+
+    background-size: 1900px 1000px;
+
+  }
+}

@@ -55,5 +55,8 @@ $(function(){
       $(this).next('.event__details').slideToggle();
 
     });
+    $('.news__details--btn').click(function(){
+      $(this).next('.news__details').slideToggle();
 
+    });
   });
