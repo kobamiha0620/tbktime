@@ -411,6 +411,20 @@
 .news{
   background-color: #F6DEF0;
   padding: 100px 0;
+  &__insta{
+    text-align: center;
+    blockquote{
+      margin: 0 auto;
+    }
+    &--txt{
+      @include var.fz(18);
+      font-weight: bold;
+      text-align: center;
+      padding: 5px 10px;
+      background-color: #b7ffff;
+      margin: 0 auto 10px;
+    }
+  }
   &__inner{
     max-width: 800px;
     margin: 0 auto;

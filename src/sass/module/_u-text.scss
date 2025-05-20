@@ -1,0 +1,85 @@
+@use "./module/variable"as var;
+.minusindent{
+  text-indent: -.5em;
+}
+.indent{
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.plusindent{
+  padding-left: 2em;
+  text-indent: -1em;
+}
+
+.red{
+  color: var.$pink;
+}
+.brown{
+  color: #783E1B;
+}
+.right{
+  text-align: right;
+}
+.u-text {
+  @media screen and (max-width: var.$spbp) {
+  }
+  &__date{
+    @include var.fz(18);
+    line-height: 1;
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(13);
+    }
+  }
+  &__feature{
+    color: white;
+    @include var.fz(15);
+    border-radius: 20px;
+    padding: 1px 10px;
+    line-height: 1;
+    &.red{
+      background-color: var.$pink;
+    }
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(12);
+    }
+  }
+  &__ttl{
+    font-weight: bold;
+    line-height: 1.6;
+    @include var.fz(24);
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(16);
+    }
+  }
+  &__txt{
+    line-height: 1.6;
+    @include var.fz(16);
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(13);
+      line-height: 1.4;
+    }
+  }
+  &__subttl{
+    font-weight: bold;
+    line-height: 1.6;
+    @include var.fz(18);
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(16);
+    }
+  }
+  &__strong{
+    font-weight: bold;
+    line-height: 1.6;
+    @include var.fz(16);
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(14);
+    }
+  }
+  &__note{
+    line-height: 1.4;
+    @include var.fz(13);
+    @media screen and (max-width: var.$spbp) {
+      @include var.fz(10);
+    }
+  }
+}

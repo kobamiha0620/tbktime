@@ -44,7 +44,7 @@ js:[]
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><!-- Google Font -->
 
 <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-<link rel="stylesheet" href="./assets/css/style0904.css">
+<link rel="stylesheet" href="./assets/css/style0425mod02.css?v=1.2">
 
 <title><%= pageinit.ttl %></title>
 
@@ -74,35 +74,50 @@ js:[]
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <header class="header" id="headerFv">
+    <h1 class="header__fv">「たべっ子どうぶつ」初のアプリゲーム たべっ子どうぶつTime 2024.3 Coming Soon
+    </h1>
+    <a href="./memorial.html" class="header__btn">
+      <img src="./assets/img/bnr_memorial.png" alt="たべっ子どうぶつ メモリアル">
+    </a>
+  </header>
+  <%- include('module/newsblc'); -%>
+
+  <%- include('module/main'); -%>
+
+
+
   <%- include('module/introrelease'); -%>
   <%- include('module/jacket'); -%>
   <%- include('module/member'); -%>
-  <%- include('module/schedule'); -%>
-  <%- include('module/event'); -%>
-  <%- include('module/news'); -%>
+  <main class="main">
 
-<header class="header" id="headerFv">
-  <h1 class="header__fv">「たべっ子どうぶつ」初のアプリゲーム たべっ子どうぶつTime 2024.3 Coming Soon
-  </h1>
-</header>
+    <div class="main__news">
+        <div class="main__news--top">
+            <div class="btm">
+                <div class="inner">
+                    <div class="main__news--x">
+                        <a class="twitter-timeline" data-height="800"
+                            href="https://twitter.com/tabekko_time?ref_src=twsrc%5Etfw">Tweets by tabekko_time</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <!-- <a class="twitter-timeline" data-height="800" href="https://twitter.com/GINBIS_PR?ref_src=twsrc%5Etfw">Tweets by GINBIS_PR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                    </div>
+                    <a href="https://twitter.com/tabekko_time/" target="_blank" rel="noopener noreferrer"
+                        class="main__news--btn">フォローする</a>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </div>
+    </main>
+    
 
-  <%- include('module/main'); -%>
+
   <%- include('module/footer'); -%>
 
-<!-- 
-  <div class="fixedbnr">
-    <div class="fixedbnr__flx02">
-      <a href="https://itunes.apple.com/jp/app/id6476189804" target="_blank" rel="noopener noreferrer" class="main__intro--camp-app01"></a>
-      <a href="https://play.google.com/store/apps/details?id=jp.co.dynt.tabekkotime" target="_blank" rel="noopener noreferrer" class="main__intro--camp-app02"></a>
-    </div>
 
-    <div class="fixedbnr__flx">
-      <a href="https://twitter.com/tabekko_time/" target="_blank" rel="noopener noreferrer" class="fixedbnr__flx--x">たべっ子どうぶつTime X</a>
-      <a href="https://www.instagram.com/tabekko_time/" target="_blank" rel="noopener noreferrer" class="fixedbnr__flx--insta">たべっ子どうぶつTime Instagra</a>
-      <a href="https://lin.ee/3lnXiUE" target="_blank" rel="noopener noreferrer" class="fixedbnr__flx--line">たべっ子どうぶつTime LINE</a>
-    </div>
-
-  </div> -->
 
   <script src="./assets/js/modernizr-custom.js"></script>
   <script src="./assets/js/common0904.js"></script>

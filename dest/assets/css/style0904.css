@@ -814,6 +814,20 @@ th {
   background-color: #F6DEF0;
   padding: 100px 0;
 }
+.news__insta {
+  text-align: center;
+}
+.news__insta blockquote {
+  margin: 0 auto;
+}
+.news__insta--txt {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #b7ffff;
+  margin: 0 auto 10px;
+}
 .news__inner {
   max-width: 800px;
   margin: 0 auto;

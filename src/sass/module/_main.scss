@@ -262,7 +262,6 @@
         }
         &__intro{
             padding: 5vw 0 15vw;
-
             &--inner{
                 width: 100%;
                 padding: 0 5vw;
@@ -270,8 +269,9 @@
             }
             &--camp{
                 margin: 5vw 0 0;
-                background-size: 100% auto;
+                background-size: cover;
                 position: relative;
+                
                 background-repeat: no-repeat;
                 width: 100%;
                 padding: 0 5vw;
@@ -475,9 +475,6 @@
                 margin: 0 auto;
             }
 
-
-
-
             &--notice{
                 @extend .notice;
                 text-align: right;
@@ -564,7 +561,6 @@
 //0222 ____campaign変更 -----------------
 .main__intro--camp{
     background-image: url('../img/bg_campaign_mod.png');
-
 }
 
 //0227 ____campaign変更 -----------------
@@ -667,12 +663,10 @@
     //タブレット対応 ----------
     @media screen and (max-width: var.$tabw) {
         &--campaign{
-
             &-inner{
                 position: relative;
                 padding: 0 5vw;
             }
-
         }
         &--nekowani{
             position: absolute;
@@ -821,7 +815,7 @@
     }
     &__intro{
         &--camp{
-            background-image: url('../img/bg_campaign_0311.png');
+            background: url('../img/bg_campaign_0311.png') no-repeat 0 0;
             margin: 60px 0 0;
             background-size: 100% auto;
             position: relative;
@@ -987,9 +981,8 @@
         &--camp{
             background-image: url('../img/bg_campaign0321.png');
             &-app{
-                padding: 146px 0 0;
+                padding: 50px 0 0;
                 width: 570px;
-
             }
             &-box{
                 padding: 76px 0 47px;
@@ -1067,10 +1060,10 @@
 .main__intro{
 
     &--camp{
-        background-image: url('../img/bg_camp0326.png');
+        background-image: url('../img/bg_camp-2503.jpg');
         &-app{
             width: 616px;
-            padding-top: 96px;
+            // padding-top: 96px;
         }
         &-app01{
             background-image: url('../img/btn_apporigin.png');
@@ -1083,12 +1076,12 @@
         }
         @media screen and (max-width: var.$tabw) {
             &-box{
-                padding-top: 10vw;
+                padding-top: 9.5vw;
             }
             &-app{
                 width: 100%;
                 padding: 0 7vw;
-                padding-top: 10vw;
+                padding-top: 6vw;
             }
             &-app01{
                 width: 27.2vw;

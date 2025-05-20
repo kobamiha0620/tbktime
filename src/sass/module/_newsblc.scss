@@ -1,0 +1,268 @@
+@use "./module/variable"as var;
+
+.newsblc {
+  background: url('../img/bg_wood01b.jpg') repeat-y;
+  background-size: cover;
+  width: 100%;
+  padding: 108px 0 108px;
+
+  @media screen and (max-width: var.$spbp) {
+    padding: 13.5vw 0 13.5vw;
+  }
+&__pinkline{
+  border-top: solid 1px #FD5F7F;
+  border-bottom: solid 1px #FD5F7F;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+  &__subttl {
+    padding: 30px 0;
+  }
+  &__img{
+    margin: 34px 0 30px;
+  }
+  &__imginner{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+    img{
+      margin: 0 auto;
+      display: block;
+      max-height: 450px;
+    }
+  }
+  &__mail {
+    background-image: url('../img/mail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  &__mail--wrapper {
+    display: flex;
+    margin-top: 50px;
+    max-width: 230px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #000;
+
+    p {
+      color: #FFF;
+      @include var.fz(14);
+      line-height: 1;
+    }
+  }
+
+  &__content {
+    max-width: 980px;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url('../img/bg_news.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: 0 0;
+
+    @media (min-width: 600px) and (max-width: var.$tabw) {
+      max-width: 90vw;
+      width: 100%;
+      background-repeat: repeat-y;
+      background-size: 100% auto;
+
+    }
+
+    @media screen and (max-width: var.$spbp) {
+      max-width: 90vw;
+      width: 100%;
+      background-repeat: repeat-y;
+      background-size: 100% auto;
+
+    }
+
+
+  }
+
+  &__top {
+    background-image: url('../img/top_news.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0 0;
+    padding-top: 64px;
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+    @media (min-width: 600px) and (max-width: var.$tabw) {
+
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: var.$spbp) {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 10vw;
+    }
+  }
+
+  &__inner {
+    margin-top: -1px;
+    padding: 0 64px;
+
+    @media screen and (max-width: var.$tabw) {
+      padding: 0 6vw;
+    }
+  }
+
+  &__btm {
+    background-image: url('../img/bottom_news.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: right 0 bottom 0;
+    padding-bottom: 64px;
+
+    @media screen and (max-width: var.$spbp) {
+      padding-bottom: 10vw;
+    }
+  }
+
+  &__txtblc {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__txtblc--feature {
+    margin-left: 8px;
+  }
+
+  &__ttl {
+    margin: 0 0 20px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__txt {
+    margin: 0 0 10px;
+    display: block;
+  }
+  &__txt02{
+    margin: 20px 0 0;
+
+  }
+
+  &__blc--wrapper {
+    margin: 0 0 50px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 14vw;
+    }
+  }
+
+  &__smallblc {
+    margin: 0 0 50px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 8vw;
+    }
+  }
+
+  &__smallblc--list {
+    margin: 0 0 30px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 7vw;
+    }
+  }
+
+  &__smallblc--list-item {
+    margin: 0 0 5px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 3px;
+    }
+  }
+
+  &__smallblc--list-noteitem {
+    padding-left: 1em;
+    margin: 0 0 20px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 7vw;
+    }
+
+  }
+
+  &__blc {
+    margin: 30px 0 10px;
+    padding: 30px 0 0;
+    border-bottom: dashed 1px #000;
+    border-top: dashed 1px #000;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 7vw 0 5vw;
+    }
+  }
+
+  &__schedule {
+    display: block;
+    margin: 0 0 30px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 5vw;
+    }
+  }
+
+  &__schedule--ttl {
+    @media screen and (max-width: var.$spbp) {}
+  }
+
+  &__schedule--txt {
+    margin: 0 0 5px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 3px;
+    }
+  }
+
+  &__schedule--list {}
+
+  &__schedule--list-item {
+    margin: 0 0 5px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin: 0 0 3px;
+    }
+  }
+
+  &__comment {
+    border-top: solid 1px #000;
+    padding-top: 50px;
+
+    @media screen and (max-width: var.$spbp) {
+      padding-top: 8vw;
+    }
+
+  }
+
+  &__comment--blc {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: var.$spbp) {
+      margin-bottom: 6vw;
+    }
+  }
+}
